@@ -1,0 +1,160 @@
+%-----------------------------------------------------------------------
+% Usar opção handout para disponibilizar slides
+\documentclass[handout,serif, professionalfont, usenames, dvipsnames, aspectratio = 169]{beamer}
+%\documentclass[serif, professionalfont, usenames, dvipsnames, aspectratio = 169]{beamer}
+\usepackage[T1]{fontenc}
+
+% \usetheme{Copenhagen}
+
+% Definição do esquema de cores:
+% 1. UFPR - Azul com cinza.
+% 2. DEST - Roxo com cinza.
+% 3. LEG - Laranjado com cinza.
+\def\mycolorscheme{1}
+
+% Caminho para a imagem de fundo com aspecto 16x9.
+% \def\pathtobg{config/ufpr-fachada-baixo-1.jpg}
+% \def\pathtobg{config/ufpr-fundo.jpg}
+% \def\pathtobg{config/ufpr-fundo.jpg}
+\def\pathtobg{config/ufpr-fundo-16x9.jpg}
+
+% ATTENTION: preamble.tex contains all style definitions.
+\input{config/preamble-global.tex}
+\input{config/preamble-chunk-rnw.tex}
+\input{config/preamble-commands.tex}
+\input{config/preamble-author.tex}
+\input{config/preamble-refs.tex}
+
+<<include = FALSE>>=
+source("./config/setup.R")
+@
+
+%-----------------------------------------------------------------------
+%-----------------------------------------------------------------------
+%-----------------------------------------------------------------------
+
+\title[TH · McGLM]{
+  \LARGE \bf Testes de hipóteses em modelos multivariados\\ de covariância linear generalizada 
+  %\vspace{1em}
+}
+
+\subtitle[Qualificação]{
+  \large { Qualificação de Mestrado}
+}
+
+%\author[Prof. Paulo Justiniano $\cdot$ UFPR]{%
+%      \href{http://leg.ufpr.br/~paulojus}{Prof.~Paulo Justiniano Ribeiro Jr} \\
+%      \href{mailto:paulojus@ufpr.br}{\small\tt paulojus@ufpr.br}
+%}
+
+\author[Lineu Alberto $\cdot$ PPGInformatica UFPR]{%
+      Lineu Alberto Cavazani de Freitas \\
+      Prof.~Wagner Hugo Bonat \\
+      Prof.~Marco Antônio Zanata Alves%\\
+      %\href{mailto:paulojus@ufpr.br}{\small\tt paulojus@ufpr.br}
+}
+
+%\date[]{
+%   \textcolor{lightgrey}{2018/1}
+%}
+
+%\date{17 de março de 2020}
+
+\date{2021}
+
+%-----------------------------------------------------------------------
+%-----------------------------------------------------------------------
+%-----------------------------------------------------------------------
+
+\begin{document}
+
+\begin{frame}[plain]
+   \titlepage
+\end{frame}
+
+%-----------------------------------------------------------------------
+
+\begin{frame}
+  \frametitle{Exemplo tópicos}
+  \begin{itemize}
+    \itemsep 2ex
+  \item item 1. 
+  \item item 2. 
+  \item item 3. 
+  \item item 4. 
+  \item item 5. 
+  \item item 6. 
+  \item item 7. 
+  \item item 8. 
+  \end{itemize}
+\end{frame}
+
+%-----------------------------------------------------------------------
+
+\begin{frame}[plain]
+  \frametitle{Slide sem rodapé}
+
+\begin{itemize}
+\item item 1.
+\item item 2.
+\item item 3.
+\item item 4.
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------------------
+
+\begin{frame}
+  \frametitle{Slide com imagem na pasta pics}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.3\linewidth]{./pics/sapiens.jpeg}
+    \caption{Harari, 2018}
+\nocite{harari}
+\end{figure}
+
+\end{frame}
+
+%--------------------------------------------------
+
+\begin{frame}
+  \frametitle{Slide com referencia}
+
+\cite{diggle+chetwynd:2011}
+
+\end{frame}
+
+%--------------------------------------------------
+
+\begin{frame}[fragile]
+\frametitle{Slide com código R}
+
+<<echo = FALSE, fig.cap = "Estatística e o método científico (adaptado de \\cite{diggle+chetwynd:2011}).", out.height="0.75\\textheight">>=
+par(mar=c(0,0,0,0))
+xy <- cbind(c(0,1,0.5), c(0,0,sqrt(3)/2))
+plot(rbind(xy, c(0,0)), axes=F, type="l", xlab="", ylab="", xlim=c(-0.1, 1.1), ylim=c(-0.1, 1.1), asp=1)
+#text(xy[1,], xy[,2], c("modelo","dado","natureza"))
+text(xy[1,1], xy[1,2], c("modelo"), pos=2, col=4, cex=1.5)
+text(xy[2,1], xy[2,2], c("dado"), pos=4, col=4, cex=1.5)
+text(xy[3,1], xy[3,2], c("natureza"), pos=3, col=4, cex=1.5)
+text(0.5, 0, "Inferência estatística", pos=1, col=2, cex=1.5)
+text(0.2, sqrt(3)/4, "Teoria",  srt=60, col=2, cex=1.5)
+text(0.8, sqrt(3)/4, "Aquisição de dados", srt=300, col=2, cex=1.5)
+@
+\end{frame}
+
+%--------------------------------------------------
+
+\begin{frame}[fragile]
+  \frametitle{Referências bibliográficas}
+  
+  \begin{tiny}
+    \bibliography{references}
+  \end{tiny}
+  
+\end{frame}
+
+
+\end{document}
