@@ -1,0 +1,6 @@
+\frametitle{Referências bibliográficas}
+
+  \begin{tiny}
+    \bibliography{references}
+  \end{tiny}
+

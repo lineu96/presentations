@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  30 NOV 2020 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  4 MAY 2021 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1546,52 +1546,57 @@ Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 225.
 
 ]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 253.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 255.
 <img/eu3.jpeg, id=99, 1084.05pt x 1057.9525pt>
 File: img/eu3.jpeg Graphic file (type jpg)
 <use img/eu3.jpeg>
-Package pdftex.def Info: img/eu3.jpeg  used on input line 253.
+Package pdftex.def Info: img/eu3.jpeg  used on input line 255.
 (pdftex.def)             Requested size: 110.03851pt x 107.38345pt.
+
+Overfull \hbox (60.0pt too wide) detected at line 255
+ [] 
+ []
+
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 253.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 255.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 253.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 255.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
- [3
+[3
 
  <./img/eu3.jpeg>]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 281.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 283.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 281.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 283.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [4
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 285.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 287.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 285.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 287.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [5
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 299.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 301.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 299.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 301.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [6
 
@@ -1599,438 +1604,439 @@ Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 299.
 <img/tcc.jpg, id=170, 1284.8pt x 963.6pt>
 File: img/tcc.jpg Graphic file (type jpg)
 <use img/tcc.jpg>
-Package pdftex.def Info: img/tcc.jpg  used on input line 309.
+Package pdftex.def Info: img/tcc.jpg  used on input line 311.
 (pdftex.def)             Requested size: 267.45572pt x 200.58287pt.
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 309.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 311.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 309.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 311.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [7
 
  <./img/tcc.jpg>]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 329.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 331.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 329.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 331.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [8
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 348.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 350.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 348.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 350.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [9
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 352.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 354.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 352.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 354.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [10
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 374.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 376.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 374.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 376.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [11
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 405.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 407.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 405.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 407.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [12
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 431.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 433.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 431.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 433.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
- [13
+
+[13
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 479.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 481.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 479.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 481.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [14
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 497.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 499.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 497.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 499.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [15
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 532.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 534.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 532.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 534.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
-
-[16
+ [16
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 550.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 552.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 550.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 552.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [17
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 554.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 556.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 554.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 556.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [18
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 591.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 593.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 591.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 593.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [19
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 626.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 628.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 626.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 628.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [20
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 630.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 632.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 630.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 632.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [21
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 644.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 646.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 644.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 646.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [22
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 662.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 664.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 662.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 664.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [23
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 678.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 680.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 678.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 680.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [24
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 702.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 704.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 702.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 704.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [25
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 727.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 729.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 727.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 729.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [26
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 743.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 745.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 743.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 745.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [27
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 761.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 763.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 761.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 763.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
- [28
+
+[28
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 765.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 767.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 765.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 767.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [29
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 789.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 791.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 789.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 791.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [30
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 818.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 820.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 818.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 820.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
-
-[31
+ [31
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 854.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 856.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 854.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 856.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [32
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 880.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 882.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 880.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 882.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [33
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 909.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 911.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 909.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 911.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [34
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 913.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 915.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 913.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 915.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [35
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 941.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 943.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 941.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 943.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [36
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 963.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 965.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 963.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 965.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [37
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 986.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 988.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 986.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 988.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [38
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1004.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1006.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1004.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1006.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [39
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1008.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1010.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1008.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1010.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [40
 
 ]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1026.
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1028.
 
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1026.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1028.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1026.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1028.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [41
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1052.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1054.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1052.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1054.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [42
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1056.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1058.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1056.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1058.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
- [43
+
+[43
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1086.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1088.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1086.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1088.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [44
 
 ]
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1100.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1102.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1100.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1102.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
  [45
 
@@ -2038,18 +2044,17 @@ Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1100.
 <img/ufpr-transparent.png, id=790, 301.125pt x 202.7575pt>
 File: img/ufpr-transparent.png Graphic file (type png)
 <use img/ufpr-transparent.png>
-Package pdftex.def Info: img/ufpr-transparent.png  used on input line 1135.
+Package pdftex.def Info: img/ufpr-transparent.png  used on input line 1137.
 (pdftex.def)             Requested size: 85.35826pt x 57.474pt.
 File: img/ufpr-fundo.jpg Graphic file (type jpg)
 <use img/ufpr-fundo.jpg>
-Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1135.
+Package pdftex.def Info: img/ufpr-fundo.jpg  used on input line 1137.
 (pdftex.def)             Requested size: 455.24408pt x 256.07619pt.
 File: img/dsbd1x4-rect.png Graphic file (type png)
 <use img/dsbd1x4-rect.png>
-Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1135.
+Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1137.
 (pdftex.def)             Requested size: 42.67912pt x 14.02756pt.
-
-[46
+ [46
 
  <./img/ufpr-transparent.png>]
 \tf@nav=\write6
@@ -2061,11 +2066,11 @@ Package pdftex.def Info: img/dsbd1x4-rect.png  used on input line 1135.
 \tf@snm=\write8
 \openout8 = `slides.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1137.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1137.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1139.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1139.
  (./slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1137.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1137.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1139.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1139.
 
 Package rerunfilecheck Info: File `slides.out' has not changed.
 (rerunfilecheck)             Checksum: 3E14399B15B48BC2832CC8A38F3F0717;481.
@@ -2099,7 +2104,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><
 usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on slides.pdf (46 pages, 621557 bytes).
+Output written on slides.pdf (46 pages, 621569 bytes).
 PDF statistics:
  899 PDF objects out of 1000 (max. 8388607)
  809 compressed objects within 9 object streams

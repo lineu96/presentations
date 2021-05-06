@@ -192,6 +192,8 @@ knit_theme$set(thm)
 
 \begin{frame}
 
+  \frametitle{McGLM}
+
 \begin{columns}
 \begin{column}{0.7\textwidth}
    
