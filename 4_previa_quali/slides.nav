@@ -94,39 +94,74 @@
 \headcommand {\beamer@framepages {42}{42}}
 \headcommand {\slideentry {2}{2}{12}{43/43}{Testes de hip\IeC {\'o}teses}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\beamer@sectionpages {18}{43}}
 \headcommand {\beamer@subsectionpages {32}{43}}
-\headcommand {\sectionentry {3}{Proposta}{44}{Proposta}{0}}
-\headcommand {\slideentry {3}{0}{1}{44/44}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{44}{ANOVA \& MANOVA}}
+\headcommand {\slideentry {2}{3}{1}{44/44}{ANOVA \& MANOVA}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\beamer@subsectionpages {44}{44}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{45}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}}
-\headcommand {\slideentry {3}{1}{1}{45/45}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}{0}}
+\headcommand {\slideentry {2}{3}{2}{45/45}{ANOVA \& MANOVA}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {3}{1}{2}{46/46}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}{0}}
+\headcommand {\slideentry {2}{3}{3}{46/46}{ANOVA \& MANOVA}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\slideentry {3}{1}{3}{47/47}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}{0}}
+\headcommand {\beamer@sectionpages {18}{46}}
+\headcommand {\beamer@subsectionpages {44}{46}}
+\headcommand {\sectionentry {3}{Proposta}{47}{Proposta}{0}}
+\headcommand {\slideentry {3}{0}{1}{47/47}{}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\beamer@subsectionpages {45}{47}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{48}{Exemplos de hip\IeC {\'o}teses}}
-\headcommand {\slideentry {3}{2}{1}{48/48}{Exemplos de hip\IeC {\'o}teses}{0}}
+\headcommand {\beamer@subsectionpages {47}{47}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{48}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}}
+\headcommand {\slideentry {3}{1}{1}{48/48}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {3}{2}{2}{49/49}{Exemplos de hip\IeC {\'o}teses}{0}}
+\headcommand {\slideentry {3}{1}{2}{49/49}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}{0}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\slideentry {3}{2}{3}{50/50}{Exemplos de hip\IeC {\'o}teses}{0}}
+\headcommand {\slideentry {3}{1}{3}{50/50}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}{0}}
 \headcommand {\beamer@framepages {50}{50}}
-\headcommand {\slideentry {3}{2}{4}{51/51}{Exemplos de hip\IeC {\'o}teses}{0}}
+\headcommand {\beamer@subsectionpages {48}{50}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{51}{Exemplos de hip\IeC {\'o}teses}}
+\headcommand {\slideentry {3}{2}{1}{51/51}{Exemplos de hip\IeC {\'o}teses}{0}}
 \headcommand {\beamer@framepages {51}{51}}
-\headcommand {\slideentry {3}{2}{5}{52/52}{Exemplos de hip\IeC {\'o}teses}{0}}
+\headcommand {\slideentry {3}{2}{2}{52/52}{Exemplos de hip\IeC {\'o}teses}{0}}
 \headcommand {\beamer@framepages {52}{52}}
-\headcommand {\slideentry {3}{2}{6}{53/53}{Exemplos de hip\IeC {\'o}teses}{0}}
+\headcommand {\slideentry {3}{2}{3}{53/53}{Exemplos de hip\IeC {\'o}teses}{0}}
 \headcommand {\beamer@framepages {53}{53}}
-\headcommand {\slideentry {3}{2}{7}{54/54}{Exemplos de hip\IeC {\'o}teses}{0}}
+\headcommand {\slideentry {3}{2}{4}{54/54}{Exemplos de hip\IeC {\'o}teses}{0}}
 \headcommand {\beamer@framepages {54}{54}}
-\headcommand {\slideentry {3}{2}{8}{55/55}{Exemplos de hip\IeC {\'o}teses}{0}}
+\headcommand {\slideentry {3}{2}{5}{55/55}{Exemplos de hip\IeC {\'o}teses}{0}}
 \headcommand {\beamer@framepages {55}{55}}
-\headcommand {\beamer@partpages {1}{55}}
-\headcommand {\beamer@subsectionpages {48}{55}}
-\headcommand {\beamer@sectionpages {44}{55}}
-\headcommand {\beamer@documentpages {55}}
-\headcommand {\gdef \inserttotalframenumber {55}}
+\headcommand {\slideentry {3}{2}{6}{56/56}{Exemplos de hip\IeC {\'o}teses}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\slideentry {3}{2}{7}{57/57}{Exemplos de hip\IeC {\'o}teses}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\beamer@sectionpages {47}{57}}
+\headcommand {\beamer@subsectionpages {51}{57}}
+\headcommand {\sectionentry {4}{Resultados preliminares}{58}{Resultados preliminares}{0}}
+\headcommand {\slideentry {4}{0}{1}{58/58}{}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\beamer@subsectionpages {58}{58}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{59}{Fun\IeC {\c c}\IeC {\~o}es implementadas}}
+\headcommand {\slideentry {4}{1}{1}{59/59}{Fun\IeC {\c c}\IeC {\~o}es implementadas}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\slideentry {4}{1}{2}{60/60}{Fun\IeC {\c c}\IeC {\~o}es implementadas}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\beamer@sectionpages {58}{60}}
+\headcommand {\beamer@subsectionpages {59}{60}}
+\headcommand {\sectionentry {5}{Considera\IeC {\c c}\IeC {\~o}es finais}{61}{Considera\IeC {\c c}\IeC {\~o}es finais}{0}}
+\headcommand {\slideentry {5}{0}{1}{61/61}{}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\slideentry {5}{0}{2}{62/62}{}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\beamer@sectionpages {61}{62}}
+\headcommand {\beamer@subsectionpages {61}{62}}
+\headcommand {\sectionentry {6}{Tarefas a serem cumpridas}{63}{Tarefas a serem cumpridas}{0}}
+\headcommand {\slideentry {6}{0}{1}{63/63}{}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\slideentry {6}{0}{2}{64/64}{}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\slideentry {6}{0}{3}{65/65}{}{0}}
+\headcommand {\beamer@framepages {65}{65}}
+\headcommand {\slideentry {6}{0}{4}{66/66}{}{0}}
+\headcommand {\beamer@framepages {66}{66}}
+\headcommand {\beamer@partpages {1}{66}}
+\headcommand {\beamer@subsectionpages {63}{66}}
+\headcommand {\beamer@sectionpages {63}{66}}
+\headcommand {\beamer@documentpages {66}}
+\headcommand {\gdef \inserttotalframenumber {66}}

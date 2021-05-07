@@ -51,11 +51,22 @@
 \textbf{The Journal of Agricultural Science}, Cambridge University Press,
   v.~13, n.~3, p. 311–320, 1923.}
 
+\bibitem[Fox \& Weisberg 2019]{car}
+\abntrefinfo{Fox \& Weisberg}{FOX; WEISBERG}{2019}
+{FOX, J.; WEISBERG, S. \textbf{An {R} Companion to Applied Regression}. Third.
+  Thousand Oaks {CA}: Sage, 2019. Dispon{\'\i}vel em:
+  \url{https://socialsciences.mcmaster.ca/jfox/Books/Companion/}.}
+
 \bibitem[Galton 1886]{galton}
 \abntrefinfo{Galton}{GALTON}{1886}
 {GALTON, F. Regression towards mediocrity in hereditary stature.
 \textbf{The Journal of the Anthropological Institute of Great Britain and
   Ireland}, JSTOR, v.~15, p. 246--263, 1886.}
+
+\bibitem[Institute 1985]{sas}
+\abntrefinfo{Institute}{INSTITUTE}{1985}
+{INSTITUTE, S. \textbf{SAS user's guide: Statistics}. [S.l.]: Sas Inst, 1985.
+  v.~2.}
 
 \bibitem[J{\o}rgensen 1987]{Jorgensen87}
 \abntrefinfo{J{\o}rgensen}{J{\O}RGENSEN}{1987}
@@ -98,6 +109,12 @@
 {POURAHMADI, M. Maximum likelihood estimation of generalised linear models for
   multivariate normal covariance matrix.
 \textbf{Biometrika}, Oxford University Press, v.~87, n.~2, p. 425--435, 2000.}
+
+\bibitem[{R Core Team} 2020]{softwareR}
+\abntrefinfo{{R Core Team}}{{R Core Team}}{2020}
+{{R Core Team}. \textbf{R: A Language and Environment for Statistical
+  Computing}.
+Vienna, Austria, 2020. Dispon{\'\i}vel em: \url{https://www.R-project.org/}.}
 
 \bibitem[Rao 1948]{score3}
 \abntrefinfo{Rao}{RAO}{1948}
