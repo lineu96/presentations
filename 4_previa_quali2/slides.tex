@@ -496,28 +496,6 @@ No contexto de modelos de regressão, três testes de hipóteses são comuns, to
 %-----------------------------------------------------------------------
 
 \begin{frame}
-  \frametitle{LRT, WT, LMT}
-
-  \begin{itemize}
-    \itemsep 2ex
-
-  \item Os três testes podem ser usados para verificar se a retirada de determinada variável do modelo prejudica o ajuste. 
-  
-  \item No caso do teste de razão de verossimilhanças, dois modelos precisam ser ajustados. 
-
-  \item Já o teste Wald e o escore necessitam de apenas um modelo. 
-
-  \item Os testes são assintóticamente equivalentes. 
-
-  \item Em amostras finitas estes testes podem apresentar resultados diferentes \cite{conflict}.
-
-  \end{itemize}
-
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
   \frametitle{Técnicas baseadas em testes de hipóteses}
 
   \begin{itemize}
@@ -1265,25 +1243,216 @@ Em que $S(\hat\beta)$ representa a função escore e $\boldsymbol{Var(\hat\beta)
 
 \end{frame}
 
-%-----------------------------------------------------------------------
+% -----------------------------------------------------------------
 
 \begin{frame}
-  \frametitle{Adaptação do teste Wald para os McGLMs}
+\frametitle{Hipóteses}
 
-  \begin{itemize}
-    \itemsep 2ex
+As hipóteses a serem testadas podem ser escritas como:
 
-  \item 
+$$H_0: \boldsymbol{L}\boldsymbol{\theta_{\beta,\tau,p}} = \boldsymbol{c} \ vs \ H_1: \boldsymbol{L}\boldsymbol{\theta_{\beta,\tau,p}} \neq \boldsymbol{c}.$$ 
+
+Em que: 
+
+\begin{itemize}
   
-  \item 
+  \item Em que $\boldsymbol{L}$ é a matriz de especificação das hipóteses a serem testadas, tem dimensão $s \times h$. 
+  
+  \item $\boldsymbol{\theta_{\beta,\tau,p}}$ é o vetor de dimensão $h \times 1$ de parâmetros de regressão, dispersão e potência do modelo. 
+  
+  \item $\boldsymbol{c}$ é um vetor de dimensão $s \times 1$ com os valores sob hipótese nula.
 
-  \item 
-
-  \end{itemize}
+\end{itemize}
 
 \end{frame}
 
-%-----------------------------------------------------------------------
+% -----------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Estatística de teste}
+
+A generalização da estatística de teste para verificar a validade de uma hipótese sobre parâmetros de um McGLM é dada por:
+
+$$W = (\boldsymbol{L\hat\theta_{\beta,\tau,p}} - \boldsymbol{c})^T \ (\boldsymbol{L \ J_{\boldsymbol{{\beta,\tau,p}}}^{-1} \ L^T})^{-1} \ (\boldsymbol{L\hat\theta_{\beta,\tau,p}} - \boldsymbol{c}).$$
+
+Em que: 
+
+\begin{itemize}
+  \item $\boldsymbol{L}$ é a mesma matriz da especificação das hipóteses a serem testadas, tem dimensão $s \times h$. 
+
+  \item $\boldsymbol{\hat\theta_{\beta,\tau,p}}$ é o vetor de dimensão $h \times 1$ com todas as estimativas dos parâmetros de regressão, dispersão e potência do modelo. 
+
+  \item $\boldsymbol{c}$ é um vetor de dimensão $s \times 1$ com os valores sob hipótese nula. 
+
+  \item E $J_{\boldsymbol{{\beta,\tau,p}}}^{-1}$ é a inversa da matriz de informação de Godambe desconsiderando os parâmetros de correlação, de dimensão $h \times h$. 
+
+\end{itemize}
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
+\subsection{Exemplos de hipóteses}
+
+% -----------------------------------------------------------------
+
+\begin{frame}[c, allowframebreaks]
+
+\begin{center}
+
+  {\normalsize \href{https://lineu96.github.io/st/}{Exemplos de hipóteses nos McGLMs}}
+  
+\end{center}
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
+\begin{frame}
+
+\frametitle{Exemplos de hipóteses}
+
+Considere um modelo bivariado genérico, com preditor dado por:
+
+$$g_r(\mu_r) = \beta_{r0} + \beta_{r1} x_1$$
+
+\begin{itemize}
+  
+  \item O índice $r$ denota a variável resposta, r = 1,2.
+  
+  \item $\beta_{r0}$ representa o intercepto.
+  
+  \item $\beta_{r1}$ um parâmetro de regressão associado a uma variável $x_1$.
+  
+  \item Considere que cada resposta possui apenas um parâmetro de dispersão: $\tau_{r1}$.
+  
+  \item Considere que os parâmetros de potência foram fixados.
+  
+\end{itemize}
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
+\begin{frame}
+
+\frametitle{Exemplo 1: único parâmetro}
+
+Considere a hipótese:
+
+$$H_0: \beta_{11} = 0 \ vs \ H_1: \beta_{11} \neq 0.$$
+
+Esta hipótese pode ser reescrita na seguinte notação:
+
+$$H_0: \boldsymbol{L}\boldsymbol{\theta_{\beta,\tau,p}} = \boldsymbol{c} \ vs \ H_1: \boldsymbol{L}\boldsymbol{\theta_{\beta,\tau,p}} \neq \boldsymbol{c}.$$ 
+
+Em que:
+
+\begin{itemize}
+  
+  \item $\boldsymbol{\theta_{\beta,\tau,p}^T}$ = $\begin{bmatrix} \beta_{10} \  \beta_{11} \ \beta_{20} \ \beta_{21} \ \tau_{11} \ \tau_{21} \end{bmatrix}$.
+
+
+\item $\boldsymbol{L} = \begin{bmatrix} 0 & 1 & 0 & 0 & 0 & 0  \end{bmatrix}.$
+ 
+\item $\boldsymbol{c}$ = $\begin{bmatrix} 0 \end{bmatrix}$, é o valor da hipótese nula. 
+
+\end{itemize}
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
+\begin{frame}
+
+\frametitle{Exemplo 2: múltiplos parâmetros}
+
+Considere a hipótese:
+
+$$H_0: \beta_{r1} = 0 \ vs \ H_1: \beta_{r1} \neq 0.$$ 
+
+Ou, da mesma forma:
+
+$$H_0: 
+\begin{pmatrix}
+\beta_{11} \\ 
+\beta_{21}
+\end{pmatrix} 
+= 
+\begin{pmatrix}
+0 \\ 
+0
+\end{pmatrix}
+\ vs \ 
+H_1: 
+\begin{pmatrix}
+\beta_{11} \\ 
+\beta_{21}
+\end{pmatrix} 
+\neq
+\begin{pmatrix}
+0 \\ 
+0 
+\end{pmatrix}.$$
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
+\begin{frame}
+
+\frametitle{Exemplo 2: múltiplos parâmetros}
+
+A hipótese pode ser reescrita na seguinte notação:
+
+$$H_0: \boldsymbol{L}\boldsymbol{\theta_{\beta,\tau,p}} = \boldsymbol{c} \ vs \ H_1: \boldsymbol{L}\boldsymbol{\theta_{\beta,\tau,p}} \neq \boldsymbol{c}.$$ 
+
+Em que:
+
+\begin{itemize}
+  
+  \item $\boldsymbol{\theta_{\beta,\tau,p}^T}$ = $\begin{bmatrix} \beta_{10} \  \beta_{11} \ \beta_{20} \ \beta_{21} \ \tau_{11} \ \tau_{21} \end{bmatrix}$.
+
+
+\item $\boldsymbol{L} = \begin{bmatrix} 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 \end{bmatrix}$
+ 
+\item $\boldsymbol{c} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$, é o valor da hipótese nula. 
+
+\end{itemize}
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
+\begin{frame}
+
+\frametitle{Exemplo 3: igualdade de efeitos}
+
+Considere a hipótese:
+
+$$H_0: \beta_{11} - \beta_{21} = 0 \ vs \ H_1: \beta_{11} - \beta_{21} \neq 0.$$
+
+Esta hipótese pode ser reescrita na seguinte notação:
+
+$$H_0: \boldsymbol{L}\boldsymbol{\theta_{\beta,\tau,p}} = \boldsymbol{c} \ vs \ H_1: \boldsymbol{L}\boldsymbol{\theta_{\beta,\tau,p}} \neq \boldsymbol{c}.$$ 
+
+Em que:
+
+\begin{itemize}
+  
+  \item $\boldsymbol{\theta_{\beta,\tau,p}^T}$ = $\begin{bmatrix} \beta_{10} \  \beta_{11} \ \beta_{20} \ \beta_{21} \ \tau_{11} \ \tau_{21} \end{bmatrix}$.
+
+
+\item $\boldsymbol{L} = \begin{bmatrix} 0 & 1 & 0 & -1 & 0 & 0  \end{bmatrix}.$
+ 
+\item $\boldsymbol{c}$ = $\begin{bmatrix} 0 \end{bmatrix}$, é o valor da hipótese nula. 
+
+\end{itemize}
+
+\end{frame}
+
+% -----------------------------------------------------------------
 
 \begin{frame}[c, allowframebreaks]
 
