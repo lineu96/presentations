@@ -129,31 +129,38 @@
 % Definições dos proprietários.
 
 \title[TH MCGLM]{
-  \LARGE Testes de hipóteses em Modelos\\  Multivariados de Covariância  \\ Linear Generalizada}
+  \Large Testes de hipóteses em Modelos Multivariados de \\ Covariância Linear Generalizada}
 
-\subtitle{Qualificação}
+\subtitle{ \\ Qualificação}
 
-\author[Lineu Alberto]{%\small
+\author[Lineu Alberto]{\small
   Lineu Alberto Cavazani de Freitas \\
   Orientador: Prof. Dr. Wagner Hugo Bonat\\
   Co-orientador: Prof. Dr. Marco Antonio Zanata Alves
 }
 
-\institute[UFPR]{
-  PPG Informática \\
-  Data Science \& Big Data \\
-  Universidade Federal do Paraná\\
-
-  \vspace{1em}
-  \href{}{https://lineu96.github.io/st/}\\
-  \texttt{lineuacf@gmail.com}
-}
-\date{}
+ \institute[UFPR]{
+    PPG Informática %\\
+%   Data Science \& Big Data \\
+%   Universidade Federal do Paraná\\
+% 
+%   \vspace{1em}
+%   \href{}{https://lineu96.github.io/st/}\\
+%   \texttt{lineuacf@gmail.com}
+ }
+ \date{}
 
 \logo{\includegraphics[width=1.5cm]{img/dsbd1x4-rect.png}} 
 
 \usebackgroundtemplate{
   \includegraphics[width=\paperwidth]{img/ufpr-fundo.jpg}
+}
+
+\titlegraphic{
+  \vspace{-1em}
+  \includegraphics[height=1.8cm]{img/capes_tp2.png}\hspace{2em}
+  \includegraphics[height=1.8cm]{img/ufpr-transparent.png}\hspace{2em}
+  \includegraphics[height=1.8cm]{img/dsbd-2x2-trans.png}
 }
 
 %---- preamble-refs.tex ------------------------------------------------
@@ -530,7 +537,7 @@ Objetivos específicos:
 \begin{frame}
   \frametitle{Revisão de literatura}
   
-  A revisão de literatura compreende 2 temas:
+  A revisão de literatura compreende 3 temas:
   
   \begin{itemize}
     \itemsep 2ex
@@ -563,7 +570,7 @@ Objetivos específicos:
   \begin{itemize}
     \itemsep 2ex
   
-  \item Os GLM são uma forma de modelagem para lidar com apenas uma resposta para dados de diferentes naturezas.  
+  \item Os GLMs são uma forma de modelagem para lidar com apenas uma resposta para dados de diferentes naturezas.  
   
   \item É uma classe de modelos flexível e aplicável a diversos tipos de problema.  
   
@@ -574,7 +581,7 @@ Objetivos específicos:
       \item Leque reduzido de distribuições disponíveis. 
     \end{itemize}
 
-  \item Com o objetivo de contornar estas restrições, foram propostos os chamados Modelos Multivariados de Covariância Linear Generalizada (McGLM).
+  \item Os McGLMs contornam estas restrições.
   
   \item Vamos discutir os McGLM como uma extensão dos GLM, seguindo as ideias de \cite{Bonat16} . 
   
@@ -645,27 +652,26 @@ Em que:
   \item Função de variância potência \cite{Jorgensen87} e \cite{Jorgensen97}. 
   
     \begin{itemize}
-      \item caracteriza a família Tweedie de distribuições.
-      \item função de variância é dada por $\vartheta\left(\boldsymbol{\mu}; p\right) = \mu^p$
-      \item casos particulares: normal ($p$ = 0), Poisson ($p$ = 1), gama ($p$ = 2) e normal inversa ($p$ = 3).
+      \item Família Tweedie de distribuições.
+      \item $\vartheta\left(\boldsymbol{\mu}; p\right) = \mu^p$
+      \item Casos particulares: normal ($p$ = 0), Poisson ($p$ = 1), gama ($p$ = 2) e normal inversa ($p$ = 3).
     \end{itemize}
 
   
   \item Função de dispersão Poisson–Tweedie \cite{Jorgensen15}.
   
     \begin{itemize}
-      \item caracteriza a família Poisson-Tweedie de distribuições
-      \item visa contornar a inflexibilidade da utilização da função de variância potência para respostas discretas. 
-      \item função de dispersão dada por $\vartheta\left(\boldsymbol{\mu}; p\right) = \mu + \mu^p$
-      \item casos particulares os mais famosos modelos para dados de contagem: Hermite ($p$ = 0), Neyman tipo A ($p$ = 1), binomial negativa ($p$ = 2) e Poisson–inversa gaussiana (p = $3$)
+      \item Família Poisson-Tweedie de distribuições.
+      \item $\vartheta\left(\boldsymbol{\mu}; p\right) = \mu + \mu^p$
+      \item Casos particulares: Hermite ($p$ = 0), Neyman tipo A ($p$ = 1), binomial negativa ($p$ = 2) e Poisson–inversa gaussiana (p = $3$)
       
     \end{itemize}
 
   \item Função de variância binomial. 
   
     \begin{itemize}
-      \item dada por $\vartheta(\boldsymbol{\mu}) = \mu(1 - \mu)$
-      \item utilizada quando a variável resposta é binária, restrita a um intervalo ou quando tem-se o número de sucessos em um número de tentativas.
+      \item $\vartheta(\boldsymbol{\mu}) = \mu(1 - \mu)$
+      \item Acomoda respostas binárias ou restritas a um intervalo.
     \end{itemize}
 
 \end{enumerate}
@@ -736,17 +742,17 @@ em que
   
   \item $\boldsymbol{M}_{N \times R} = \left \{ \boldsymbol{\mu}_1, \dots, \boldsymbol{\mu}_R \right \}$ uma matriz de valores esperados.
   
-  \item $\Sigma_b$, uma martiz de ordem $R \times R$, que descreve a correlação entre as variáveis resposta
+  \item $\Sigma_b$, uma martiz de ordem $R \times R$, que descreve a correlação entre as variáveis resposta.
   
-\end{itemize}
-
-  Cada uma das variáveis resposta tem sua própria matriz de variância e covariância, responsável por modelar a covariância dentro de cada resposta, sendo expressa por
+  \item Cada uma das variáveis resposta tem sua própria matriz de variância e covariância:
 
 \begin{equation}
 \Sigma_r =
 \mathrm{V}_r\left(\boldsymbol{\mu}_r; p\right)^{1/2}\boldsymbol{\Omega}_r\left(\boldsymbol{\tau}\right)\mathrm{V}_r\left(\boldsymbol{\mu}_r; p\right)^{1/2}.
 \end{equation}
-  
+ 
+\end{itemize}
+
 \end{frame}
 
 %-----------------------------------------------------------------------
@@ -780,13 +786,13 @@ em que
     
   \item $\boldsymbol{\Sigma}_R \overset{G} \otimes \boldsymbol{\Sigma}_b = \mathrm{Bdiag}(\tilde{\boldsymbol{\Sigma}}_1, \ldots, \tilde{\boldsymbol{\Sigma}}_R) (\boldsymbol{\Sigma}_b \otimes \boldsymbol{I}) \mathrm{Bdiag}(\tilde{\boldsymbol{\Sigma}}_1^\top, \ldots, \tilde{\boldsymbol{\Sigma}}_R^\top)$ é o produto generalizado de Kronecker. 
   
-  \item a matriz $\tilde{\boldsymbol{\Sigma}}_r$ denota a matriz triangular inferior da decomposição de Cholesky da matriz ${\boldsymbol{\Sigma}}_r$. 
+  \item A matriz $\tilde{\boldsymbol{\Sigma}}_r$ denota a matriz triangular inferior da decomposição de Cholesky da matriz ${\boldsymbol{\Sigma}}_r$. 
   
-  \item o operador $\mathrm{Bdiag}$ denota a matriz bloco-diagonal. 
+  \item O operador $\mathrm{Bdiag}$ denota a matriz bloco-diagonal. 
   
   \item $\boldsymbol{I}$ uma matriz identidade $N \times N$.
   
-  \item Toda metodologia do McGLM está implementada no pacote \emph{mcglm} \cite{mcglm} do software estatístico R.
+  \item A metodologia do McGLM está implementada no pacote \emph{mcglm} \cite{mcglm} do software R.
 
   \end{itemize}
   
@@ -935,16 +941,17 @@ $$J_{\boldsymbol{\theta}}^{-1} = S_{\boldsymbol{\theta}}^{-1} V_{\boldsymbol{\th
   
   \item Com base no valor da estatística e de acordo com sua distribuição de probabilidade, toma-se a decisão de rejeitar ou não rejeitar a hipótese nula.
     
-  \end{itemize}
-    
-Notação:
-
-$$
+  \item Seja $\theta$ um parâmetro, um teste de hipóteses sobre $\theta$ é dado por:
+  
+  $$
 \left\{\begin{matrix}
 H_0: \theta = \theta_0 \\ 
 H_1: \theta \neq \theta_0
 \end{matrix}\right.
-$$
+$$  
+  
+  \end{itemize}
+
 
 \end{frame}
 
@@ -973,7 +980,7 @@ $$
   
   \item A probabilidade de se rejeitar a hipótese nula quando a hipótese alternativa é verdadeira (rejeitar corretamente $H_0$) recebe o nome de poder do teste.
   
-  \item P-valor: probabilidade de a estatística de teste tomar um valor igual ou mais extremo do que aquele que foi observado. Quanto menor for o P, maior será o grau com que os dados amostrais contrariam a hipótese nula.
+  \item A probabilidade de a estatística de teste tomar um valor igual ou mais extremo do que aquele que foi observado recebe o nome de p-valor.
     
   \end{itemize}
 
@@ -986,7 +993,7 @@ $$
   \begin{itemize}
     \itemsep 2ex
   
-  \item Em modelos de regrssão, testes de hipóteses são usados para verificar se a retirada de determinada variável explicativa do modelo geraria uma perda no ajuste.
+  \item Em modelos de regressão, testes de hipóteses são usados para verificar se a retirada de determinada variável explicativa do modelo geraria uma perda no ajuste.
   
   \item Os três testes mais usados para este fim são:
 
@@ -1076,9 +1083,7 @@ em que $L_0$ representa a verossimilhança do modelo restrito e $L_1$ a verossim
 
   \item O teste avalia quão longe o valor estimado está do valor postulado. 
 
-  \item Utilizando o teste Wald é possível formular hipóteses para múltiplos parâmetros, e costuma ser de especial interesse verificar se há evidência que permita afirmar que os parâmetros que associam determinada variável explicativa a variável resposta são iguais a zero. 
-
-  \item Caso tal hipótese não seja rejeitada, significa que caso estas variáveis sejam retiradas, não existirá perda de qualidade no modelo.
+  \item Utilizando o teste Wald é possível formular hipóteses para múltiplos parâmetros. 
 
   \end{itemize}
 
@@ -1615,19 +1620,12 @@ mc\_manova\_disp()       & MANOVA tipo III para dispersão \\
   
   {\normalsize \href{http://www.prppg.ufpr.br/ppginformatica/?lang=pb}{PPG Informática}}
 
+\end{center}
 
-\begin{figure} % Inicia o ambiente de figuras
-  %\subfigure{ % Começa a incluir a figura fig1.pdf
-  %  \includegraphics[width=2cm]{img/logo.png}
-  %} % Termina de incluir a figura fig1.pdf
-  \subfigure{ % Começa a incluir a figura fig2.pdf na mesma linha da figura fig1.pdf
-    \includegraphics[width=3cm]{img/ufpr-transparent.png}
-  } % Termina de incluir a figura fig2.pdf
-  %\subfigure{ % Começa a incluir a figura fig3.pdf na linha abaixo
-  %  \includegraphics[width=1.4cm]{img/dsbd-2x2-trans.png}
-  %} % Termina de incluir a figura fig3.pdf
-\end{figure} % Fecha o ambiente de figuras
-
+\begin{center}
+\includegraphics[height=1.8cm]{img/capes_tp2.png}\hspace{2em}
+  \includegraphics[height=1.8cm]{img/ufpr-transparent.png}\hspace{2em}
+  \includegraphics[height=1.8cm]{img/dsbd-2x2-trans.png}
 \end{center}
 
 \end{frame}
