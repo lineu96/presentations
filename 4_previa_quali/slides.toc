@@ -7,7 +7,8 @@
 \beamer@sectionintoc {3}{Proposta}{47}{0}{3}
 \beamer@subsectionintoc {3}{1}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}{48}{0}{3}
 \beamer@subsectionintoc {3}{2}{Exemplos de hip\IeC {\'o}teses}{51}{0}{3}
-\beamer@sectionintoc {4}{Resultados preliminares}{58}{0}{4}
-\beamer@subsectionintoc {4}{1}{Fun\IeC {\c c}\IeC {\~o}es implementadas}{59}{0}{4}
-\beamer@sectionintoc {5}{Considera\IeC {\c c}\IeC {\~o}es finais}{61}{0}{5}
-\beamer@sectionintoc {6}{Tarefas a serem cumpridas}{63}{0}{6}
+\beamer@subsectionintoc {3}{3}{ANOVA \& MANOVA via teste Wald}{57}{0}{3}
+\beamer@sectionintoc {4}{Resultados preliminares}{64}{0}{4}
+\beamer@subsectionintoc {4}{1}{Fun\IeC {\c c}\IeC {\~o}es implementadas}{65}{0}{4}
+\beamer@sectionintoc {5}{Considera\IeC {\c c}\IeC {\~o}es finais}{67}{0}{5}
+\beamer@sectionintoc {6}{Tarefas a serem cumpridas}{70}{0}{6}

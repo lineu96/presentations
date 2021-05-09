@@ -129,39 +129,61 @@
 \headcommand {\beamer@framepages {55}{55}}
 \headcommand {\slideentry {3}{2}{6}{56/56}{Exemplos de hip\IeC {\'o}teses}{0}}
 \headcommand {\beamer@framepages {56}{56}}
-\headcommand {\slideentry {3}{2}{7}{57/57}{Exemplos de hip\IeC {\'o}teses}{0}}
+\headcommand {\beamer@subsectionpages {51}{56}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{57}{ANOVA \& MANOVA via teste Wald}}
+\headcommand {\slideentry {3}{3}{1}{57/57}{ANOVA \& MANOVA via teste Wald}{0}}
 \headcommand {\beamer@framepages {57}{57}}
-\headcommand {\beamer@sectionpages {47}{57}}
-\headcommand {\beamer@subsectionpages {51}{57}}
-\headcommand {\sectionentry {4}{Resultados preliminares}{58}{Resultados preliminares}{0}}
-\headcommand {\slideentry {4}{0}{1}{58/58}{}{0}}
+\headcommand {\slideentry {3}{3}{2}{58/58}{ANOVA \& MANOVA via teste Wald}{0}}
 \headcommand {\beamer@framepages {58}{58}}
-\headcommand {\beamer@subsectionpages {58}{58}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{59}{Fun\IeC {\c c}\IeC {\~o}es implementadas}}
-\headcommand {\slideentry {4}{1}{1}{59/59}{Fun\IeC {\c c}\IeC {\~o}es implementadas}{0}}
+\headcommand {\slideentry {3}{3}{3}{59/59}{ANOVA \& MANOVA via teste Wald}{0}}
 \headcommand {\beamer@framepages {59}{59}}
-\headcommand {\slideentry {4}{1}{2}{60/60}{Fun\IeC {\c c}\IeC {\~o}es implementadas}{0}}
+\headcommand {\slideentry {3}{3}{4}{60/60}{ANOVA \& MANOVA via teste Wald}{0}}
 \headcommand {\beamer@framepages {60}{60}}
-\headcommand {\beamer@sectionpages {58}{60}}
-\headcommand {\beamer@subsectionpages {59}{60}}
-\headcommand {\sectionentry {5}{Considera\IeC {\c c}\IeC {\~o}es finais}{61}{Considera\IeC {\c c}\IeC {\~o}es finais}{0}}
-\headcommand {\slideentry {5}{0}{1}{61/61}{}{0}}
+\headcommand {\slideentry {3}{3}{5}{61/61}{ANOVA \& MANOVA via teste Wald}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\slideentry {5}{0}{2}{62/62}{}{0}}
+\headcommand {\slideentry {3}{3}{6}{62/62}{ANOVA \& MANOVA via teste Wald}{0}}
 \headcommand {\beamer@framepages {62}{62}}
-\headcommand {\beamer@sectionpages {61}{62}}
-\headcommand {\beamer@subsectionpages {61}{62}}
-\headcommand {\sectionentry {6}{Tarefas a serem cumpridas}{63}{Tarefas a serem cumpridas}{0}}
-\headcommand {\slideentry {6}{0}{1}{63/63}{}{0}}
+\headcommand {\slideentry {3}{3}{7}{63/63}{ANOVA \& MANOVA via teste Wald}{0}}
 \headcommand {\beamer@framepages {63}{63}}
-\headcommand {\slideentry {6}{0}{2}{64/64}{}{0}}
+\headcommand {\beamer@sectionpages {47}{63}}
+\headcommand {\beamer@subsectionpages {57}{63}}
+\headcommand {\sectionentry {4}{Resultados preliminares}{64}{Resultados preliminares}{0}}
+\headcommand {\slideentry {4}{0}{1}{64/64}{}{0}}
 \headcommand {\beamer@framepages {64}{64}}
-\headcommand {\slideentry {6}{0}{3}{65/65}{}{0}}
+\headcommand {\beamer@subsectionpages {64}{64}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{65}{Fun\IeC {\c c}\IeC {\~o}es implementadas}}
+\headcommand {\slideentry {4}{1}{1}{65/65}{Fun\IeC {\c c}\IeC {\~o}es implementadas}{0}}
 \headcommand {\beamer@framepages {65}{65}}
-\headcommand {\slideentry {6}{0}{4}{66/66}{}{0}}
+\headcommand {\slideentry {4}{1}{2}{66/66}{Fun\IeC {\c c}\IeC {\~o}es implementadas}{0}}
 \headcommand {\beamer@framepages {66}{66}}
-\headcommand {\beamer@partpages {1}{66}}
-\headcommand {\beamer@subsectionpages {63}{66}}
-\headcommand {\beamer@sectionpages {63}{66}}
-\headcommand {\beamer@documentpages {66}}
-\headcommand {\gdef \inserttotalframenumber {66}}
+\headcommand {\beamer@sectionpages {64}{66}}
+\headcommand {\beamer@subsectionpages {65}{66}}
+\headcommand {\sectionentry {5}{Considera\IeC {\c c}\IeC {\~o}es finais}{67}{Considera\IeC {\c c}\IeC {\~o}es finais}{0}}
+\headcommand {\slideentry {5}{0}{1}{67/67}{}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\slideentry {5}{0}{2}{68/68}{}{0}}
+\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\slideentry {5}{0}{3}{69/69}{}{0}}
+\headcommand {\beamer@framepages {69}{69}}
+\headcommand {\beamer@sectionpages {67}{69}}
+\headcommand {\beamer@subsectionpages {67}{69}}
+\headcommand {\sectionentry {6}{Tarefas a serem cumpridas}{70}{Tarefas a serem cumpridas}{0}}
+\headcommand {\slideentry {6}{0}{1}{70/70}{}{0}}
+\headcommand {\beamer@framepages {70}{70}}
+\headcommand {\slideentry {6}{0}{2}{71/71}{}{0}}
+\headcommand {\beamer@framepages {71}{71}}
+\headcommand {\slideentry {6}{0}{3}{72/72}{}{0}}
+\headcommand {\beamer@framepages {72}{72}}
+\headcommand {\slideentry {6}{0}{3}{72/73}{}{0}}
+\headcommand {\beamer@framepages {72}{73}}
+\headcommand {\slideentry {6}{0}{3}{72/74}{}{0}}
+\headcommand {\beamer@framepages {72}{74}}
+\headcommand {\slideentry {6}{0}{3}{72/75}{}{0}}
+\headcommand {\beamer@framepages {72}{75}}
+\headcommand {\slideentry {6}{0}{4}{76/76}{}{0}}
+\headcommand {\beamer@framepages {76}{76}}
+\headcommand {\beamer@partpages {1}{76}}
+\headcommand {\beamer@subsectionpages {70}{76}}
+\headcommand {\beamer@sectionpages {70}{76}}
+\headcommand {\beamer@documentpages {76}}
+\headcommand {\gdef \inserttotalframenumber {76}}

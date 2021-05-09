@@ -575,12 +575,12 @@ Objetivos específicos:
   
   A revisão de literatura compreende 3 temas:
   
-  \begin{itemize}
+  \begin{enumerate}
     \itemsep 2ex
   \item Modelos multivariados de covariância linear generalizada. 
   \item Testes de hipóteses.
   \item ANOVA \& MANOVA.
-  \end{itemize}
+  \end{enumerate}
 \end{frame}
 
 %-----------------------------------------------------------------------
@@ -611,11 +611,11 @@ Objetivos específicos:
   \item É uma classe de modelos flexível e aplicável a diversos tipos de problema.  
   
   \item Apresenta três importantes restrições:
-    \begin{itemize}
+    \begin{enumerate}
       \item A incapacidade de lidar com observações dependentes. 
       \item A incapacidade de lidar com múltiplas respostas simultaneamente.
       \item Leque reduzido de distribuições disponíveis. 
-    \end{itemize}
+    \end{enumerate}
 
   \item Os McGLMs contornam estas restrições.
   
@@ -796,7 +796,7 @@ em que
 \begin{frame}
   \frametitle{McGLM}
   
-  Um MCGLM é descrito como
+  Um McGLM é descrito como:
 
 \begin{equation}
 \label{eq:mcglm}
@@ -1137,7 +1137,7 @@ em que $L_0$ representa a verossimilhança do modelo restrito e $L_1$ a verossim
   
   \item Considere $\boldsymbol{\beta}$ um vetor de parâmetros de regressão, em que as estimativas são dadas por $\boldsymbol{\hat\beta}$ e $\boldsymbol{c}$ um vetor de valores postulados de dimensão $q$.
   
-  \item Considere $\boldsymbol{L}$uma matriz de especificação das hipóteses, de dimensão $qxp$.
+  \item Considere $\boldsymbol{L}$ uma matriz de especificação das hipóteses, de dimensão $qxp$.
   
   \item As hipóteses podem ser descritas como
 
@@ -1526,15 +1526,163 @@ Em que:
 
 % -----------------------------------------------------------------
 
-\begin{frame}
+\subsection{ANOVA \& MANOVA via teste Wald}
 
-\frametitle{ANOVA \& MANOVA via teste Wald}
+% -----------------------------------------------------------------
 
+\begin{frame}[c, allowframebreaks]
 
+\begin{center}
+
+  {\normalsize \href{https://lineu96.github.io/st/}{ANOVA \& MANOVA via teste Wald}}
+  
+\end{center}
 
 \end{frame}
 
 % -----------------------------------------------------------------
+
+\begin{frame}
+
+\frametitle{ANOVA \& MANOVA via teste Wald}
+
+\begin{itemize}
+    \itemsep 2ex
+
+  \item Com base na adaptação do teste Wald propostas, buscamos propor ANOVAs e MANOVAs via teste Wald.
+
+  \item Propomos 3 tipos diferentes de análises de variância, nomeadas tipo I, II e III.
+
+  \item Basicamente, cada linha do quadro corresponde uma hipótese. Portanto, basta especificar uma matriz $\boldsymbol{L}$.
+
+  \item Os procedimentos para análise de variância retornam um quadro para cada resposta.
+
+  \item Os procedimentos para análise variância multivariadas retornam um único quadro. 
+\end{itemize}
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
+\begin{frame}
+
+\frametitle{ANOVA \& MANOVA via teste Wald}
+
+Para fins de ilustração dos testes feitos por cada tipo das análise de variância, considere um modelo bivariado com preditor dado por:
+
+\begin{equation}
+g_r(\mu_r) = \beta_{r0} + \beta_{r1} x_1 + \beta_{r2} x_2 + \beta_{r3} x_1x_2.
+\end{equation}
+
+Em que:
+
+\begin{itemize}
+    \itemsep 2ex
+
+  \item O índice $r$ denota a variável resposta, r = 1,2. 
+
+  \item $\beta_{r0}$ denota o intercepto de cada resposta. 
+
+  \item Temos três parâmetros de regressão para cada resposta:
+  
+  \begin{enumerate}
+    
+    \item $\beta_{r1}$ é o efeito de $x_1$. 
+    
+    \item $\beta_{r2}$ é o efeito de $x_2$.
+    
+    \item $\beta_{r3}$ representa o efeito da interação entre as variáveis $x_1$ e $x_2$.
+    
+  \end{enumerate}
+
+\end{itemize}
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
+\begin{frame}
+
+\frametitle{ANOVA tipo I}
+
+Nossa proposta de análise de variância do tipo I realiza testes sobre os parâmetros de regressão de forma sequencial. Neste cenário, os seguintes testes seriam efetuados:
+
+\begin{enumerate}
+ \itemsep 2ex
+  \item Testa se todos os parâmetros são iguais a 0.
+  \item Testa se todos os parâmetros, exceto intercepto, são iguais a 0.
+  \item Testa se todos os parâmetros, exceto intercepto e os parâmetros referentes a $x_1$, são iguais a 0.
+  \item Testa se todos os parâmetros, exceto intercepto e os parâmetros referentes a $x_1$ e $x_2$, são iguais a 0.
+\end{enumerate}
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
+\begin{frame}
+
+\frametitle{ANOVA tipo II}
+
+Em nossa análise de variância do tipo II são feitos testes comparando o modelo completo contra o modelo sem todos os parâmetros que envolvem determinada variável.
+
+\begin{enumerate}
+ \itemsep 2ex
+  \item Testa se o intercepto é igual a 0.
+  
+  \item Testa se os parâmetros referentes a $x_1$ são iguais a 0. Ou seja, é avaliado o impacto da retirada de $x_1$ do modelo. Neste caso retira-se a interação pois nela há $x_1$.
+  
+  \item Testa se os parâmetros referentes a $x_2$ são iguais a 0. Ou seja, é avaliado o impacto da retirada de $x_2$ do modelo. Neste caso retira-se a interação pois nela há $x_2$.
+  
+  \item Testa se o efeito de interação é 0.
+
+\end{enumerate}
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
+\begin{frame}
+
+\frametitle{ANOVA tipo III}
+
+Nossa análise de variância do tipo III considera o modelo completo contra o modelo sem determinada variável.
+
+\begin{enumerate}
+ \itemsep 2ex
+  \item Testa se o intercepto é igual a 0.
+  
+  \item Testa se os parâmetros de efeito principal referentes a $x_1$ são iguais a 0. Ou seja, é avaliado o impacto da retirada de $x_1$ nos efeitos principais do modelo.
+  
+  \item Testa se os parâmetros de efeito principal referentes a $x_2$ são iguais a 0. Ou seja, é avaliado o impacto da retirada de $x_2$ nos efeitos principais do modelo.
+  
+  \item Testa se o efeito de interação é 0.
+\end{enumerate}
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
+\begin{frame}
+
+\frametitle{Comentários}
+
+\begin{itemize}
+   \itemsep 2ex
+   
+  \item As análises de variância do tipo II e III geram os mesmos resultados quando aplicadas a modelos sem efeitos de interação. 
+  
+  \item A diferença entre os tipos II e III é como são feitos os testes na presença de parâmetros de interação.
+  
+  \item As análises de variâncias multivariadas seguem o mesmo padrão de teste. Contudo a matriz $\boldsymbol{L}$ é expandida para comportar hipóteses sobre todas as respostas.
+  
+  \item De modo análogo ao que é feito para o preditor linear, propomos também uma análise de variância do tipo III para os parâmetros de dispersão do modelo.
+  
+\end{itemize}
+
+\end{frame}
+
+% -----------------------------------------------------------------
+
 
 \section{Resultados preliminares}
 
@@ -1598,9 +1746,9 @@ mc\_manova\_disp()       & MANOVA tipo III para dispersão \\
 
 \begin{frame}
   \frametitle{Considerações finais}
-
+  
 \begin{itemize}
-
+\itemsep 2ex
   \item O McGLM contorna importantes restrições encontradas nas classes clássicas de modelos, como: 
 
   \begin{enumerate}
@@ -1615,9 +1763,32 @@ mc\_manova\_disp()       & MANOVA tipo III para dispersão \\
 
 \end{itemize}
 
-
 \end{frame}
 
+% -----------------------------------------------------------------
+
+\begin{frame}
+  \frametitle{Considerações finais}
+  
+\begin{itemize}
+\itemsep 2ex
+  \item Todas as funções de prefixo \emph{mc\_anova} e \emph{mc\_manova} foram implementadas no sentido de facilitar o procedimento de análise da importâncias das variáveis.
+  
+  \item Implementamos funções para avaliar parâmetros de dispersão.
+  
+  \item A função \emph{mc\_linear\_hypothesis()} da liberdade ao usuário de efetuar qualquer teste utilizando a estatística de Wald no contexto dos McGLM. 
+
+ \item A partir desta função é possível replicar os resultados de qualquer uma das funções de análise de variância e testar hipóteses mais gerais como:
+
+  \begin{enumerate}
+    \item Igualdade de efeitos.
+    \item Formular hipóteses com testes usando valores diferentes de zero .
+    \item Formular hipóteses que combinem parâmetros de regressão, dispersão e potência.
+  \end{enumerate}
+
+\end{itemize}
+
+\end{frame}
 
 %-----------------------------------------------------------------------
 
@@ -1627,8 +1798,10 @@ mc\_manova\_disp()       & MANOVA tipo III para dispersão \\
 
 \begin{frame}
   \frametitle{Tarefas a serem cumpridas}
-
+ 
 \begin{itemize}
+\itemsep 2ex
+
   \item Avaliar as propriedades e comportamento dos testes propostos com base em estudos de simulação.
   
   \item Discutir o potencial de aplicação da proposta com base na aplicação a conjuntos de dados reais.
@@ -1639,6 +1812,15 @@ mc\_manova\_disp()       & MANOVA tipo III para dispersão \\
 
 
 %-----------------------------------------------------------------------
+
+\begin{frame}[c, allowframebreaks]
+  \frametitle{Referências bibliográficas}
+  
+  \begin{tiny}
+    \bibliography{references}
+  \end{tiny}
+  
+\end{frame}
 
 \begin{frame}[c, allowframebreaks]
 
@@ -1667,14 +1849,5 @@ mc\_manova\_disp()       & MANOVA tipo III para dispersão \\
 \end{frame}
 
 %--------------------------------------------------
-
-\begin{frame}[fragile]
-  \frametitle{Referências bibliográficas}
-  
-  \begin{tiny}
-    \bibliography{references}
-  \end{tiny}
-  
-\end{frame}
 
 \end{document}
