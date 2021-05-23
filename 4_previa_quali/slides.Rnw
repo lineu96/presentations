@@ -1805,7 +1805,7 @@ mc\_manova\_disp()       & MANOVA tipo III para dispersão \\
 \end{center}
 
 \begin{center}
-\includegraphics[height=1.8cm]{img/capes_tp2.png}\hspace{2em}
+  \includegraphics[height=1.8cm]{img/capes_tp2.png}\hspace{2em}
   \includegraphics[height=1.8cm]{img/ufpr-transparent.png}\hspace{2em}
   \includegraphics[height=1.8cm]{img/dsbd-2x2-trans.png}
 \end{center}
