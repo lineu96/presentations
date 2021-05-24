@@ -197,6 +197,7 @@ knit_theme$set(thm)
 \begin{columns}
 \begin{column}{0.7\textwidth}
    \begin{itemize}
+   \itemsep 2ex
 
   \item Estatístico formado pela \href{https://www.ufpr.br/portalufpr/}{Universidade Federal do Paraná (UFPR)} em 2019.
 
@@ -1017,7 +1018,7 @@ knit_theme$set(thm)
 
 \begin{frame}
 
-\frametitle{Resumo das atividades}
+\frametitle{Meus conselhos e percepções}
 
   \begin{itemize}
   
