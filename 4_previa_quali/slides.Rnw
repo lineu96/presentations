@@ -1168,7 +1168,7 @@ $$ LMT = \boldsymbol{S^{'}(\hat\beta}) \ \boldsymbol{Var(\hat\beta)} \ \boldsymb
 
 Em que $S(\hat\beta)$ representa a função escore e $\boldsymbol{Var(\hat\beta)}$ a matriz de variâncias avaliadas sob o modelo restrito ($H_0$).
 
- \item  WT $\sim \chi^2_q$, em que $q$ representa o número de parâmetros fixados sob $H_0$.
+ \item  LMT $\sim \chi^2_q$, em que $q$ representa o número de parâmetros fixados sob $H_0$.
 
 \end{itemize}
 

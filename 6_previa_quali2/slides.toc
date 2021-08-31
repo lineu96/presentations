@@ -1,0 +1,13 @@
+\babel@toc {brazil}{}
+\beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
+\beamer@sectionintoc {2}{Revis\IeC {\~a}o de literatura}{18}{0}{2}
+\beamer@subsectionintoc {2}{1}{McGLM}{20}{0}{2}
+\beamer@subsectionintoc {2}{2}{Testes de hip\IeC {\'o}teses}{32}{0}{2}
+\beamer@subsectionintoc {2}{3}{ANOVA \& MANOVA}{44}{0}{2}
+\beamer@sectionintoc {3}{Proposta}{47}{0}{3}
+\beamer@subsectionintoc {3}{1}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}{48}{0}{3}
+\beamer@subsectionintoc {3}{2}{Exemplos de hip\IeC {\'o}teses}{51}{0}{3}
+\beamer@subsectionintoc {3}{3}{ANOVA \& MANOVA via teste Wald}{57}{0}{3}
+\beamer@sectionintoc {4}{Resultados preliminares}{64}{0}{4}
+\beamer@sectionintoc {5}{Considera\IeC {\c c}\IeC {\~o}es finais}{67}{0}{5}
+\beamer@sectionintoc {6}{Pend\IeC {\^e}ncias}{70}{0}{6}

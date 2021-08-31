@@ -1,0 +1,157 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Aitchison \& Silvey 1958]{score1}
+\abntrefinfo{Aitchison \& Silvey}{AITCHISON; SILVEY}{1958}
+{AITCHISON, J.; SILVEY, S. Maximum-likelihood estimation of parameters subject
+  to restraints.
+\textbf{The annals of mathematical Statistics}, JSTOR, p. 813--828, 1958.}
+
+\bibitem[Anderson et al. 1973]{Anderson73}
+\abntrefinfo{Anderson et al.}{ANDERSON et al.}{1973}
+{ANDERSON, T. et al. Asymptotically efficient estimation of covariance matrices
+  with linear structure.
+\textbf{The Annals of Statistics}, Institute of Mathematical Statistics, v.~1,
+  n.~1, p. 135--141, 1973.}
+
+\bibitem[Bonat 2018]{mcglm}
+\abntrefinfo{Bonat}{BONAT}{2018}
+{BONAT, W.~H. Multiple response variables regression models in {R}: The {mcglm}
+  package.
+\textbf{Journal of Statistical Software}, v.~84, n.~4, p. 1--30, 2018.}
+
+\bibitem[Bonat \& J{\o}rgensen 2016]{Bonat16}
+\abntrefinfo{Bonat \& J{\o}rgensen}{BONAT; J{\O}RGENSEN}{2016}
+{BONAT, W.~H.; J{\O}RGENSEN, B. Multivariate covariance generalized linear
+  models.
+\textbf{Journal of the Royal Statistical Society: Series C (Applied
+  Statistics)}, Wiley Online Library, v.~65, n.~5, p. 649--675, 2016.}
+
+\bibitem[Box \& Cox 1964]{boxcox64}
+\abntrefinfo{Box \& Cox}{BOX; COX}{1964}
+{BOX, G.~E.; COX, D.~R. An analysis of transformations.
+\textbf{Journal of the Royal Statistical Society. Series B (Methodological)},
+  JSTOR, p. 211--252, 1964.}
+
+\bibitem[Evans \& Savin 1982]{conflict}
+\abntrefinfo{Evans \& Savin}{EVANS; SAVIN}{1982}
+{EVANS, G.; SAVIN, N.~E. Conflict among the criteria revisited; the w, lr and
+  lm tests.
+\textbf{Econometrica: Journal of the Econometric Society}, JSTOR, p. 737--748,
+  1982.}
+
+\bibitem[Fisher \& Mackenzie 1923]{anova_fisher}
+\abntrefinfo{Fisher \& Mackenzie}{FISHER; MACKENZIE}{1923}
+{FISHER, R.~A.; MACKENZIE, W.~A. Studies in crop variation. ii. the manurial
+  response of different potato varieties.
+\textbf{The Journal of Agricultural Science}, Cambridge University Press,
+  v.~13, n.~3, p. 311–320, 1923.}
+
+\bibitem[Fox \& Weisberg 2019]{car}
+\abntrefinfo{Fox \& Weisberg}{FOX; WEISBERG}{2019}
+{FOX, J.; WEISBERG, S. \textbf{An {R} Companion to Applied Regression}. Third.
+  Thousand Oaks {CA}: Sage, 2019. Dispon{\'\i}vel em:
+  \url{https://socialsciences.mcmaster.ca/jfox/Books/Companion/}.}
+
+\bibitem[Galton 1886]{galton}
+\abntrefinfo{Galton}{GALTON}{1886}
+{GALTON, F. Regression towards mediocrity in hereditary stature.
+\textbf{The Journal of the Anthropological Institute of Great Britain and
+  Ireland}, JSTOR, v.~15, p. 246--263, 1886.}
+
+\bibitem[Institute 1985]{sas}
+\abntrefinfo{Institute}{INSTITUTE}{1985}
+{INSTITUTE, S. \textbf{SAS user's guide: Statistics}. [S.l.]: Sas Inst, 1985.
+  v.~2.}
+
+\bibitem[J{\o}rgensen 1987]{Jorgensen87}
+\abntrefinfo{J{\o}rgensen}{J{\O}RGENSEN}{1987}
+{J{\O}RGENSEN, B. Exponential dispersion models.
+\textbf{Journal of the Royal Statistical Society: Series B (Methodological)},
+  Wiley Online Library, v.~49, n.~2, p. 127--145, 1987.}
+
+\bibitem[J{\o}rgensen 1997]{Jorgensen97}
+\abntrefinfo{J{\o}rgensen}{J{\O}RGENSEN}{1997}
+{J{\O}RGENSEN, B. \textbf{The theory of dispersion models}. [S.l.]: CRC Press,
+  1997.}
+
+\bibitem[J{\o}rgensen \& Kokonendji 2015]{Jorgensen15}
+\abntrefinfo{J{\o}rgensen \& Kokonendji}{J{\O}RGENSEN; KOKONENDJI}{2015}
+{J{\O}RGENSEN, B.; KOKONENDJI, C.~C. Discrete dispersion models and their
+  tweedie asymptotics.
+\textbf{AStA Advances in Statistical Analysis}, Springer, v.~100, n.~1, p.
+  43--78, 2015.}
+
+\bibitem[Ley \& Bordas 2018]{ley2018makes}
+\abntrefinfo{Ley \& Bordas}{LEY; BORDAS}{2018}
+{LEY, C.; BORDAS, S.~P. What makes data science different? a discussion
+  involving statistics2. 0 and computational sciences.
+\textbf{International Journal of Data Science and Analytics}, Springer, v.~6,
+  n.~3, p. 167--175, 2018.}
+
+\bibitem[Nelder \& Wedderburn 1972]{Nelder72}
+\abntrefinfo{Nelder \& Wedderburn}{NELDER; WEDDERBURN}{1972}
+{NELDER, J.~A.; WEDDERBURN, R. W.~M. {Generalized Linear Models}.
+\textbf{Journal of the Royal Statistical Society. Series A (General)}, v.~135,
+  p. 370--384, 1972.}
+
+\bibitem[Paula 2004]{paula}
+\abntrefinfo{Paula}{PAULA}{2004}
+{PAULA, G.~A. \textbf{Modelos de regress{\~a}o: com apoio computacional}.
+  [S.l.]: IME-USP S{\~a}o Paulo, 2004.}
+
+\bibitem[Pourahmadi 2000]{Pourahmadi00}
+\abntrefinfo{Pourahmadi}{POURAHMADI}{2000}
+{POURAHMADI, M. Maximum likelihood estimation of generalised linear models for
+  multivariate normal covariance matrix.
+\textbf{Biometrika}, Oxford University Press, v.~87, n.~2, p. 425--435, 2000.}
+
+\bibitem[{R Core Team} 2020]{softwareR}
+\abntrefinfo{{R Core Team}}{{R Core Team}}{2020}
+{{R Core Team}. \textbf{R: A Language and Environment for Statistical
+  Computing}.
+Vienna, Austria, 2020. Dispon{\'\i}vel em: \url{https://www.R-project.org/}.}
+
+\bibitem[Rao 1948]{score3}
+\abntrefinfo{Rao}{RAO}{1948}
+{RAO, C.~R. Large sample tests of statistical hypotheses concerning several
+  parameters with applications to problems of estimation. In:  CAMBRIDGE
+  UNIVERSITY PRESS. \textbf{Mathematical Proceedings of the Cambridge
+  Philosophical Society}. [S.l.], 1948. v.~44, n.~1, p. 50--57.}
+
+\bibitem[Silvey 1959]{score2}
+\abntrefinfo{Silvey}{SILVEY}{1959}
+{SILVEY, S.~D. The lagrangian multiplier test.
+\textbf{The Annals of Mathematical Statistics}, JSTOR, v.~30, n.~2, p.
+  389--407, 1959.}
+
+\bibitem[Smith, Gnanadesikan \& Hughes 1962]{manova}
+\abntrefinfo{Smith, Gnanadesikan \& Hughes}{SMITH; GNANADESIKAN; HUGHES}{1962}
+{SMITH, H. et al. Multivariate analysis of variance (manova).
+\textbf{Biometrics}, JSTOR, v.~18, n.~1, p. 22--41, 1962.}
+
+\bibitem[Wald 1943]{wald}
+\abntrefinfo{Wald}{WALD}{1943}
+{WALD, A. Tests of statistical hypotheses concerning several parameters when
+  the number of observations is large.
+\textbf{Transactions of the American Mathematical society}, JSTOR, v.~54, n.~3,
+  p. 426--482, 1943.}
+
+\bibitem[Weihs \& Ickstadt 2018]{weihs2018data}
+\abntrefinfo{Weihs \& Ickstadt}{WEIHS; ICKSTADT}{2018}
+{WEIHS, C.; ICKSTADT, K. Data science: the impact of statistics.
+\textbf{International Journal of Data Science and Analytics}, Springer, v.~6,
+  n.~3, p. 189--194, 2018.}
+
+\bibitem[Wilks 1938]{trv}
+\abntrefinfo{Wilks}{WILKS}{1938}
+{WILKS, S.~S. The large-sample distribution of the likelihood ratio for testing
+  composite hypotheses.
+\textbf{The annals of mathematical statistics}, JSTOR, v.~9, n.~1, p. 60--62,
+  1938.}
+
+\end{thebibliography}
