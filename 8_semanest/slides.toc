@@ -1,0 +1,13 @@
+\babel@toc {brazil}{}
+\beamer@sectionintoc {1}{Ci\IeC {\^e}ncia de dados}{3}{0}{1}
+\beamer@sectionintoc {2}{Modelos de regress\IeC {\~a}o}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Modelos multivariados de covari\IeC {\^a}ncia linear generalizada}{16}{0}{2}
+\beamer@sectionintoc {3}{Testes de hip\IeC {\'o}teses}{26}{0}{3}
+\beamer@sectionintoc {4}{Proposta}{37}{0}{4}
+\beamer@sectionintoc {5}{Resultados preliminares}{40}{0}{5}
+\beamer@subsectionintoc {5}{1}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}{41}{0}{5}
+\beamer@subsectionintoc {5}{2}{Exemplos de hip\IeC {\'o}teses}{44}{0}{5}
+\beamer@subsectionintoc {5}{3}{ANOVA \& MANOVA via teste Wald}{52}{0}{5}
+\beamer@subsectionintoc {5}{4}{Fun\IeC {\c c}\IeC {\~o}es implementadas}{55}{0}{5}
+\beamer@sectionintoc {6}{Pr\IeC {\'o}ximas etapas}{57}{0}{6}
+\beamer@sectionintoc {7}{Considera\IeC {\c c}\IeC {\~o}es finais}{60}{0}{7}
