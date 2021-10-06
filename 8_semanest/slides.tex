@@ -180,9 +180,9 @@
 % Definições dos proprietários.
 
 \title[TH MCGLM]{
-  \Large Testes de hipóteses em Modelos Multivariados de \\ Covariância Linear Generalizada}
+  \Large Testes de hipóteses em Modelos Multivariados de \\ Covariância Linear Generalizada\\ \vspace{0.3cm}}
 
-\subtitle{ \\ Qualificação}
+\subtitle{Semana acadêmica do curso de Estatística 2021}
 
 \author[Lineu Alberto]{\small
   Lineu Alberto Cavazani de Freitas \\
@@ -310,160 +310,25 @@
 
 \begin{frame}
   \frametitle{Modelos de regressão}
-
-  Três conceitos são importantes para entender minimamente o funcionamento de um modelo de regressão:
   
   \begin{itemize}
   
   \itemsep 2ex
   
-  \item \textbf{Fenômeno aleatório.}
-  \item \textbf{Variável aleatória.}
-  \item \textbf{Distribuição de probabilidade.}
+  \item Técnica utilizada quando há o interesse em verificar a influência das variáveis explicativas sobre variáveis respostas.
+  
+  \item Assume-se que a variável resposta condicional às explicativas segue uma distribuição de probabilidades. 
+  
+  \item Um modelo de regressão é uma expressão matemática que relaciona a média da variável resposta às variáveis explicativas.
+
+  \item Com modelos de regressão é possível:
+  
+  \begin{itemize}
+    \item \textbf{Explicar} a associação entre as variáveis.
+    \item \textbf{Predizer} valores da resposta com base nos valores observados das explicativas. 
+  \end{itemize}
+
 \end{itemize}
-
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Modelos de regressão}
-
-  \begin{itemize}
-    \itemsep 2ex
-
-  \item \textbf{Fenômeno aleatório}: situação na qual diferentes observações podem fornecer diferentes desfechos. 
-  
-  \item \textbf{Variáveis aleatórias}: mecanismos que associam um valor numérico a cada desfecho possível do fenômeno. 
-  
-  \begin{itemize}
-    \item Podem ser discretas ou contínuas.
-    \item Existem probabilidades associadas aos valores de uma variável aleatória.
-    \item Estas probabilidades podem ser descritas por funções.
-  \end{itemize}
-
-  \item \textbf{Distribuições de probabilidade}: modelos probabilísticos que buscam descrever as probabilidades de variáveis aleatórias.
-
-  \end{itemize}
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  
-  \frametitle{Modelos de regressão}
-
-  \begin{itemize}
-    \itemsep 2ex
-  
-  \item Na prática, podemos buscar uma distribuição de probabilidades que melhor descreva o fenômeno de interesse. 
-  
-  \item Estas distribuições são descritas por \textbf{funções}. 
-  
-  \item Estas funções possuem \textbf{parâmetros} que controlam aspectos da distribuição.
-  
-  \item Os parâmetros são quantidades desconhecidas \textbf{estimadas} através dos dados.
-  
-  \end{itemize}
-
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Modelos de regressão}
-
-  \begin{itemize}
-    \itemsep 2ex
-
-  \item Em regressão \textbf{modelamos parâmetros} das distribuições como uma função de \textbf{variáveis explicativas}.
-  
-  \item O parâmetro de interesse é decomposto em uma combinação linear de novos parâmetros que associam as \textbf{variáveis explicativas} à \textbf{variável resposta}.
-  
-  \item Obtém-se uma \textbf{equação que explique a relação} entre as variáveis. 
-  
-  \end{itemize}
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Modelos de regressão}
-
-\def\hd{0.9}%
-\def\vd{1.1}%
-\newcommand{\tm}[1]{\tikz[overlay, anchor=base] \node[red] (#1) {};}%
-\newcommand{\tmc}[2]{
-  \tikz[overlay] \node[xshift=#2ex, yshift=1.25ex] (#1) {};
-}%
-\renewcommand{\baselinestretch}{0.9}%
-
-\tikzstyle{every picture}+=[remember picture]%
-
-\tikzset{% 
-  rounded corners=4pt,
-  every node/.style={color=black},
-  every path/.style={
-    color=darkgreen!80!black, thin,
-    shorten >=4pt, shorten <=4pt, |-latex
-  },
-  mybox/.style={
-    draw=gray!50, fill=gray!20, very thick, rectangle,
-    inner sep=7pt, inner ysep=7pt
-  },
-  bola/.style={
-    circle, draw, near end, inner sep=0.5pt, font=\footnotesize,
-    color=darkgreen, fill=white,
-  },
-  nodedir/.style={right, text width=3.5cm, align=flush left},
-  nodeesq/.style={left, text width=2.6cm, align=flush right}
-}%
-
-\begin{tikzpicture}%
-  \node (eq1) {$\tmc{Y}{1}Y\tmc{pipe1}{0.3}|\tm{X}x$};
-  \node[below=1.5cm of eq1] (eq2)
-  {$\tmc{Q}{1}Q(Y\tmc{pipe2}{0.3}|x) =
-    \tmc{eta}{0.5}\eta(\tmc{x}{0.5}x \tmc{comma}{0.3},
-    \tmc{theta}{0.5}\theta)$};
-  \draw (Y.220) -- ++(-1,0)
-  node[nodeesq] {\footnotesize{Vari{\'a}vel resposta}};
-  \draw (X.40) -- ++(1,0)
-  node[nodedir] {
-    \footnotesize{Variáveis explicativas\\
-      [-1ex]}
-  };
-  \draw[shorten <=1pt] (pipe1) |- +(\vd,\hd)
-  node[nodedir] {
-    Distribui{\c c}{\~a}o\\
-    \footnotesize{Normal, binomial,\\
-      [-1ex] Poisson, beta, \ldots}
-  } node[bola] {1};
-  \draw[shorten <=6pt] (pipe1) |- ++(-0.25,-1) -| (pipe2)
-  node[bola] {2};
-  \draw (Q) |- +(-\vd,-\hd)
-  node[nodeesq] {
-    Quantidade\\
-    \footnotesize{Em geral, a m{\'e}dia}
-  } node[bola] {3};
-  \draw[shorten <=6pt] (pipe1) |- ++(0.25,-1) -| (comma)
-  node[bola] {4};
-  \draw (eta) |- +(-\vd,-\hd-1)
-  node[nodeesq] {
-    Fun{\c c}{\~a}o\\
-    \footnotesize{Linear, n{\~a}o linear,\\
-      [-1ex] semiparam{\'e}trica, \ldots}
-  } node[bola] {5};
-  \draw (x) |- +(\vd,-\hd-1)
-  node[nodedir] {
-    Explicativa\\
-    \footnotesize{Num{\'e}rica, categ{\'o}rica.}
-  } node[bola] {6};
-  \draw (theta) |- +(\vd,-\hd+0.25)
-  node[nodedir] {
-    Par{\^a}metros\\
-    \footnotesize{Interpret{\'a}veis.}
-  } node[bola] {7};
-\end{tikzpicture}%
 
 \end{frame}
 
@@ -491,7 +356,7 @@
         \begin{itemize}
           \item Escolha da distribuição de probabilidade.
           \item Especificação do modelo.
-          \item Obtenção dos parâmetros (ajuste).
+          \item Obtenção das estimativas dos parâmetros (ajuste).
           \item Diagnóstico.
         \end{itemize}
       
@@ -506,96 +371,59 @@
 \end{frame}
 
 %-----------------------------------------------------------------------
+\section{Modelos multivariados de covariância linear generalizada}
+%-----------------------------------------------------------------------
 
 \begin{frame}
-  \frametitle{Modelos de regressão}
 
-  \begin{itemize}
-    \itemsep 2ex
+\frametitle{Modelos multivariados de covariância linear generalizada}
 
-  \item Existem modelos univariados e multivariados. 
+\begin{itemize}
+   
+   \itemsep 2ex
+   
+  \item Os modelos multivariados de covariância linear generalizada (McGLMs) \cite{Bonat16} configuram uma estrutura geral para análise via modelos de regressão.
   
-    \begin{itemize}
-      \item \textbf{Univariados}: apenas uma variável resposta.
-      \item \textbf{Multivariados}: mais de uma variável resposta.
-    \end{itemize}
-
-  \item Em ambos os casos o interesse é avaliar o \textbf{efeito de variáveis explicativas}.
+  \item Comporta múltiplas respostas de diferentes naturezas.
   
-  \item Existem inúmeras classes de modelos de regressão, dentre elas: 
-  \begin{itemize}
-  \item Modelo linear normal.
-  \item Modelos lineares generalizados.
-  \item Modelos multivariados de covariância linear generalizada. 
+    \item Pode-se ajustar modelos com diferentes preditores e distribuições para cada resposta.
+  
+  \item Pode especificar modelos que levam em conta a correlação entre indivíduos do conjunto de dados. 
+
 \end{itemize}
 
-  \end{itemize}
 \end{frame}
 
 %-----------------------------------------------------------------------
 
 \begin{frame}
-  \frametitle{Modelo linear normal}
 
-  \begin{itemize}
-    \itemsep 2ex
+\frametitle{Modelos multivariados de covariância linear generalizada}
 
-  \item O modelo linear normal \cite{galton} ficou famoso por suas facilidades computacionais. 
+\begin{itemize}
+   
+   \itemsep 2ex
   
-  \item Possui pressupostos difíceis de serem atendidos na prática.
+  \item Os parâmetros são interpretáveis:
+  
     \begin{itemize}
-      \item Independência.
-      \item Normalidade.
-      \item Variância constante.
-    \end{itemize}
-  
-  \item Diversas técnicas foram propostas para solucionar casos em que os pressupostos fossem violados.
-  
-  \end{itemize}
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Modelos lineares generalizados}
-
-  \begin{itemize}
-    \itemsep 2ex
-
-  \item O avanço computacional permitiu o surgimento de modelos mais gerais que necessitavam de processos iterativos para estimação dos parâmetros. 
-  
-  \item Surgem os modelos lineares generalizados (GLM) \cite{Nelder72}. 
-  
-  \item Os GLMs permitem utilizar qualquer membro da família exponencial de distribuições.
-
-  \item Casos especiais: Bernoulli, binomial, Poisson, normal, gama, normal inversa, entre outras.
-  
-  \end{itemize}
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Modelos multivariados de covariância linear generalizada}
-  \begin{itemize}
-    \itemsep 2ex
-  
-  \item Apesar do grande potencial, os GLMs apresentam três importantes restrições:
-    \begin{enumerate}
-      \itemsep 2ex
     
-      \item A incapacidade de lidar com observações dependentes. 
-      \item A incapacidade de lidar com múltiplas respostas simultaneamente.
-      \item Leque reduzido de distribuições disponíveis. 
-    \end{enumerate}
+    \itemsep 2ex
+      
+      \item \textbf{Parâmetros de regressão}: efeito das variáveis explicativas sobre as respostas.
+      
+      \item \textbf{Parâmetros de dispersão}: impacto da correlação entre unidades.
+      
+      \item \textbf{Parâmetros de potência}: indicativo de qual distribuição se adequa ao problema.
+      
+    \end{itemize}
+    
+    \item A metodologia do McGLM está implementada no pacote \emph{mcglm} \cite{mcglm} do software R.
 
-  \item Os modelos multivariados de covariância linear generalizada (McGLMs) \cite{Bonat16} contornam estas restrições.
+\end{itemize}
 
-  \end{itemize}
 \end{frame}
 
-%-----------------------------------------------------------------------
-\subsection{Modelos multivariados de covariância linear generalizada}
 %-----------------------------------------------------------------------
 
 \begin{frame}
@@ -781,129 +609,7 @@ Em que:
       \item \textbf{Função de estimação de Pearson} para os demais parâmetros. 
     \end{enumerate}
 
-\end{itemize}
-
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-
-\frametitle{Funções de estimação}
-
-\begin{center}
-$\psi_{\boldsymbol{\beta}}(\boldsymbol{\beta}, \boldsymbol{\lambda}) = \boldsymbol{D}^\top \boldsymbol{C}^{-1}(\mathcal{Y} - \mathcal{M})$
-
-$\psi_{\boldsymbol{\lambda}_i}(\boldsymbol{\beta}, \boldsymbol{\lambda}) = \mathrm{tr}(W_{\boldsymbol{\lambda}i} (\boldsymbol{r}^\top\boldsymbol{r} - \boldsymbol{C})),  i = 1,.., Q$
-\end{center}
-
-Em que:
-
-\begin{itemize}
-  
-  \item \normalsize $\boldsymbol{\beta}_r$ denota um vetor $k_r \times 1$ de parâmetros de regressão.
-  
-  \item \normalsize $\boldsymbol{\lambda}$ é um vetor $Q \times 1$ de parâmetros de dispersão.
-  
-  \item \normalsize $\mathcal{Y}$ é um vetor $NR \times 1$ com os valores da matriz de variáveis respostas $Y_{N \times R}$ empilhados.
-  
-  \item \normalsize $\mathcal{M}$ é um vetor $NR \times 1$ com os valores da matriz de valores esperados $M_{N \times R}$ empilhados.
-  
-  \item \normalsize $\boldsymbol{D} = \nabla_{\boldsymbol{\beta}} \mathcal{M}$ 
-é uma matriz $NR \times K$, e $\nabla_{\boldsymbol{\beta}}$ denota o 
-operador gradiente.
-  
-  \item \normalsize $W_{\boldsymbol{\lambda}i} = -\frac{\partial
-    \boldsymbol{C}^{-1}}{\partial \boldsymbol{\lambda}_i}$ 
-    
-  \item \normalsize $\boldsymbol{r} = (\mathcal{Y} - \mathcal{M})$
-  
-\end{itemize}
-
-\end{frame}
-
-% -----------------------------------------------------------------
-
-\begin{frame}
-
-\frametitle{Distribuição assintótica e algoritmo de estimação}
-
-\begin{itemize}
-
-  \item Para resolver o sistema de equações $\psi_{\boldsymbol{\beta}} = 0$ e $\psi_{\boldsymbol{\lambda}} = 0$ faz-se uso do algoritmo Chaser modificado:
-
-$$
-\begin{matrix}
-\boldsymbol{\beta}^{(i+1)} = \boldsymbol{\beta}^{(i)}- S_{\boldsymbol{\beta}}^{-1} \psi \boldsymbol{\beta} (\boldsymbol{\beta}^{(i)}, \boldsymbol{\lambda}^{(i)}), \\ 
-\boldsymbol{\lambda}^{(i+1)} = \boldsymbol{\lambda}^{(i)}\alpha S_{\boldsymbol{\lambda}}^{-1} \psi \boldsymbol{\lambda} (\boldsymbol{\beta}^{(i+1)}, \boldsymbol{\lambda}^{(i)}).
-\end{matrix}
-$$
-
-  \item Seja $\boldsymbol{\hat{\theta}} = (\boldsymbol{\hat{\beta}^{\top}}, \boldsymbol{\hat{\lambda}^{\top}})^{\top}$ o estimador baseado em funções de estimação de $\boldsymbol{\theta}$.
-  
-  \item A distribuição assintótica de $\boldsymbol{\hat{\theta}}$ é:
-
-$$
-\boldsymbol{\hat{\theta}} \sim N(\boldsymbol{\theta}, J_{\boldsymbol{\theta}}^{-1}),
-$$
-
-\noindent $J_{\boldsymbol{\theta}}^{-1}$ é a inversa da matriz de informação de Godambe, dada por
-  
-$$J_{\boldsymbol{\theta}}^{-1} = S_{\boldsymbol{\theta}}^{-1} V_{\boldsymbol{\theta}} S_{\boldsymbol{\theta}}^{-\top},$$ 
-
-\noindent em que $S_{\boldsymbol{\theta}}^{-\top} = (S_{\boldsymbol{\theta}}^{-1})^{\top}.$
-
-\end{itemize}
-
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-
-\frametitle{Comentários sobre os McGLMs}
-
-\begin{itemize}
-   
-   \itemsep 2ex
-   
-  \item Configuram uma estrutura geral para análise via modelos de regressão.
-  
-  \item Comporta múltiplas respostas de diferentes naturezas.
-  
-    \item Pode-se ajustar modelos com diferentes preditores e distribuições para cada resposta.
-  
-  \item Os modelos levam em conta a correlação entre indivíduos do conjunto de dados. 
-
-\end{itemize}
-
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-
-\frametitle{Comentários sobre os McGLMs}
-
-\begin{itemize}
-   
-   \itemsep 2ex
-  
-  \item Os parâmetros são interpretáveis:
-  
-    \begin{itemize}
-    
-    \itemsep 2ex
-      
-      \item \textbf{Parâmetros de regressão}: efeito das variáveis explicativas sobre as respostas.
-      
-      \item \textbf{Parâmetros de dispersão}: impacto da correlação entre unidades.
-      
-      \item \textbf{Parâmetros de potência}: indicativo de qual distribuição se adequa ao problema.
-      
-    \end{itemize}
-    
-    \item A metodologia do McGLM está implementada no pacote \emph{mcglm} \cite{mcglm} do software R.
+  \item Mais detalhes são descritos em \cite{Bonat16}.
 
 \end{itemize}
 
@@ -916,164 +622,21 @@ $$J_{\boldsymbol{\theta}}^{-1} = S_{\boldsymbol{\theta}}^{-1} V_{\boldsymbol{\th
 %-----------------------------------------------------------------------
 
 \begin{frame}
-  \frametitle{Testes de hipóteses}
-  \begin{itemize}
-    \itemsep 2ex
-  
-  \item Inferência: \textbf{inferir} conclusões válidas a respeito de uma população por meio do estudo de uma amostra.
-  
-  \item Problemas de inferência estatística são:
-    \begin{enumerate}
-    
-      \itemsep 2ex
-      
-      \item \textbf{Estimação} de parâmetros com base em informação amostral.
-      
-      \item \textbf{Testes de hipóteses}.
-        \begin{itemize}
-          \item Com base na evidência amostral, podemos considerar que dado parâmetro tem determinado valor?
-        \end{itemize}
-    
-    \end{enumerate}
-  
-  \end{itemize}
-  
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Testes de hipóteses}
-  \begin{itemize}
-    \itemsep 2ex
-  
-  \item São postuladas 2 hipóteses, chamadas de \textbf{nula} e \textbf{alternativa}.
-  
-  \item Avalia-se uma estatística de teste. 
-  
-  \item Com base no valor da estatística e de acordo com sua distribuição de probabilidade, toma-se a decisão de rejeitar ou não rejeitar a hipótese nula.
-    
-  \item Seja $\theta$ um parâmetro, um teste de hipóteses sobre $\theta$ é dado por:
-  
-  $$
-\left\{\begin{matrix}
-H_0: \theta = \theta_0 \\ 
-H_1: \theta \neq \theta_0
-\end{matrix}\right.
-$$  
-  
-  \end{itemize}
-
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Testes de hipóteses}
-  
-  Desfechos possíveis:
-  
-  \begin{table}[]
-\begin{tabular}{l|cc}
-\hline
-\multicolumn{1}{c|}{}    & \textbf{Rejeita $H_0$} & \textbf{Não Rejeita $H_0$} \\ \hline
-\textbf{$H_0$ verdadeira} & Erro tipo I           & Decisão correta           \\
-\textbf{$H_0$ falsa}      & Decisão correta       & Erro tipo II              \\ \hline
-\end{tabular}
-\caption{Desfechos possíveis em um teste de hipóteses}
-\label{tab:my-table}
-\end{table}
-  
-  \begin{itemize}
-    \itemsep 2ex
-  
-  \item A probabilidade do erro do tipo I recebe o nome de nível de significância.
-  
-  \item A probabilidade de se rejeitar corretamente $H_0$ recebe o nome de poder do teste.
-  
-  \item A probabilidade de a estatística de teste tomar um valor igual ou mais extremo do que aquele que foi observado recebe o nome de p-valor.
-    
-  \end{itemize}
-
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
   \frametitle{Testes de hipóteses em modelos de regressão}
   \begin{itemize}
     \itemsep 2ex
   
   \item Usados para verificar se a retirada de determinada variável explicativa do modelo geraria uma perda no ajuste.
   
-  \item Os três testes mais usados são:
+  \item Dentre os testes mais comuns está o teste Wald:
 
     \begin{itemize}
-      \item O teste da razão de verossimilhanças \cite{trv}.
-      \item O teste Wald \cite{wald}.
-      \item O teste do multiplicador de lagrange, também conhecido como teste escore \cite{score1}, \cite{score2}, \cite{score3}.
-    \end{itemize}
-  
-  \item São baseados na função de verossimilhança dos modelos.
-  
-  \item São assintóticamente equivalentes.
-  
-  \end{itemize}
-  
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Teste Wald}
-
-  \begin{itemize}
-    \itemsep 2ex
-
-  \item Requer apenas um modelo ajustado. 
-  
-  \item Consiste em verificar se existe evidência para afirmar que um ou mais parâmetros são iguais a valores postulados. 
-
-  \item O teste avalia quão longe o valor estimado está do valor postulado. 
-
-  \end{itemize}
-
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Teste Wald}
-  
-  Considere um modelo de regressão em que:
-
-\begin{itemize}
-
-  \itemsep 2ex
-  
-  \item $\boldsymbol{\beta}$ um vetor com $p$ parâmetros de regressão.
-    
-  \item $\boldsymbol{\hat\beta}$ as estimativas dos parâmetros.
-    
-  \item $\boldsymbol{c}$ um vetor de valores postulados de dimensão $q$.
-    
-  \item $\boldsymbol{L}$ uma matriz de especificação das hipóteses, de dimensão $qxp$.  
-    
-  \end{itemize}
-
-\end{frame}
-
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Teste Wald}
-  
-  \begin{itemize}
-
-  \itemsep 2ex
-  
-  \item As hipóteses podem ser descritas como:
+      
+      \item Verifica se existe evidência para afirmar que os parâmetros são iguais a valores postulados.
+      
+      \item Avalia quão longe o valor estimado está do valor postulado. 
+      
+        \item As hipóteses podem ser descritas como:
 
 $$
 \left\{\begin{matrix}
@@ -1088,9 +651,11 @@ WT = (\boldsymbol{L\hat\beta} - \boldsymbol{c})^T \ (\boldsymbol{L \ Var^{-1}(\h
 $$
 
  \item  WT \sim \chi^2_q.
-
-\end{itemize}
-
+   
+    \end{itemize}
+  
+  \end{itemize}
+  
 \end{frame}
 
 %-----------------------------------------------------------------------
@@ -1105,29 +670,14 @@ $$
   
   \item Consiste em efetuar testes sucessivos impondo \textbf{restrições ao modelo} original. 
 
-  \item O objetivo é testar se a ausência de determinada variável gera perda ao modelo. 
+  \item O objetivo é testar se a ausência de determinada variável \textbf{gera perda} ao modelo. 
 
-  \end{itemize}
-
-\end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{ANOVA \& MANOVA}
-
-  \begin{itemize}
-    \itemsep 2ex
-    
-      \item Os resultados são sumarizados numa tabela, o chamado \textbf{quadro de análise de variância}.
-
-  \item Na ANOVA \cite{anova_fisher}, avalia-se a relevância das variáveis sobre uma única resposta. 
-
-  \item Na MANOVA \cite{manova}, avalia-se a relevância das variáveis sobre mais de uma resposta. 
+  \item Os resultados são sumarizados numa tabela, o chamado \textbf{quadro de análise de variância}.
   
   \end{itemize}
 
 \end{frame}
+
 
 %-----------------------------------------------------------------------
 
@@ -1138,14 +688,10 @@ $$
 
   \itemsep 2ex
   
-  \item Importância dos modelos de regressão em ciência de dados.
-  
-  \item Classes relevantes.
-  
+  \item Importância dos modelos de regressão.
+
   \item McGLMs e importância dos parâmetros de regressão, dispersão e potência.
-  
-  \item Elementos de testes de hipóteses.
-  
+
   \item Testes de hipóteses em modelos de regressão, ênfase no teste Wald.
   
   \item Procedimentos baseados em testes de hipóteses: ANOVA e MANOVA.
@@ -1193,13 +739,13 @@ $$
   \begin{enumerate}
     \itemsep 2ex
 
-  \item Adaptar o teste Wald para realização de testes de hipóteses gerais sobre parâmetros de McGLMs. 
+  \item \textbf{Adaptar} o teste Wald para realização de testes de hipóteses gerais sobre parâmetros de McGLMs. 
   
-  \item Implementar funções para efetuar tais testes, bem como funções para efetuar ANOVAs e MANOVAs para os McGLMs. 
+  \item \textbf{Implementar} funções para efetuar tais testes, bem como funções para efetuar ANOVAs e MANOVAs para os McGLMs. 
 
-  \item Avaliar as propriedades e comportamento dos testes propostos com base em estudos de simulação.
+  \item \textbf{Avaliar} as propriedades e comportamento dos testes propostos com base em estudos de simulação.
 
-  \item Motivar o potencial de aplicação das metodologias discutidas com base na aplicação a conjuntos de dados reais.
+  \item \textbf{Motivar} o potencial de aplicação das metodologias discutidas com base na aplicação a conjuntos de dados reais.
 
   \end{enumerate}
 
@@ -1278,7 +824,7 @@ Em que:
 
 \begin{center}
 
-  {\normalsize \href{https://lineu96.github.io/st/}{Exemplos de hipóteses nos McGLMs}}
+  {\normalsize \href{https://lineu96.github.io/st/}{Exemplo de hipóteses nos McGLMs}}
   
 \end{center}
 
@@ -1288,7 +834,7 @@ Em que:
 
 \begin{frame}
 
-\frametitle{Exemplos de hipóteses}
+\frametitle{Problema}
 
 \begin{itemize}
   
@@ -1320,7 +866,7 @@ Em que:
 
 \begin{frame}
 
-\frametitle{Exemplos de hipóteses}
+\frametitle{Variáveis}
 
 \begin{itemize}
   
@@ -1399,57 +945,9 @@ Em que:
 
 \begin{frame}
 
-\frametitle{Exemplos de hipóteses}
+\frametitle{Pergunta}
 
-Algumas perguntas de interesse podem ser:
-
-\begin{itemize}
-  
-  \itemsep 2ex
-  
-  \item Existe efeito de renda per capita por domicílio com TV a cabo (em USD) sobre o número de assinantes de TV a cabo (em milhares)?
-    
-  \item Existe efeito de custo médio mensal de manutenção de TV a cabo (em USD) sobre o número de assinantes de TV a cabo (em milhares) \textbf{E} percentual de domicílios com TV a cabo?
-  
-\end{itemize}
-
-\end{frame}
-
-% -----------------------------------------------------------------
-
-\begin{frame}
-
-\frametitle{Exemplo 1: efeito de renda sobre número de assinantes}
-
-Considere a hipótese:
-
-$$H_0: \beta_{11} = 0 \ vs \ H_1: \beta_{11} \neq 0.$$
-
-Esta hipótese pode ser reescrita na seguinte notação:
-
-$$H_0: \boldsymbol{L}\boldsymbol{\theta_{\beta,\tau,p}} = \boldsymbol{c} \ vs \ H_1: \boldsymbol{L}\boldsymbol{\theta_{\beta,\tau,p}} \neq \boldsymbol{c}.$$ 
-
-Em que:
-
-\begin{itemize}
-  
-  \item $\boldsymbol{\theta_{\beta,\tau,p}^T}$ = $\begin{bmatrix} \beta_{10} \  \beta_{11} \ \beta_{12} \ \beta_{13} \ \beta_{20} \ \beta_{21} \ \beta_{22} \ \ \beta_{23} \ \tau_{10} \ \tau_{20} \end{bmatrix}$.
-
-\item $\boldsymbol{L} = \begin{bmatrix} 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0  \end{bmatrix}.$
- 
-\item $\boldsymbol{c}$ = $\begin{bmatrix} 0 \end{bmatrix}$, é o valor da hipótese nula. 
-
-\end{itemize}
-
-\end{frame}
-
-% -----------------------------------------------------------------
-
-\begin{frame}
-
-\frametitle{Exemplo 2: efeito de custo com manutenção sobre número\\ de assinantes e percentual de domicílios com TV a cabo}
-
-Considere a hipótese:
+Existe efeito de custo médio mensal de manutenção de TV a cabo (em USD) sobre o número de assinantes de TV a cabo (em milhares) \textbf{E} percentual de domicílios com TV a cabo?
 
 $$H_0: \beta_{r2} = 0 \ vs \ H_1: \beta_{r2} \neq 0.$$ 
 
@@ -1483,7 +981,7 @@ H_1:
 
 \begin{frame}
 
-\frametitle{Exemplo 2: efeito de custo com manutenção sobre número\\ de assinantes e percentual de domicílios com TV a cabo}
+\frametitle{Efeito de custo com manutenção sobre número de assinantes\\ e percentual de domicílios com TV a cabo}
 
 A hipótese pode ser reescrita na seguinte notação:
 
@@ -1509,7 +1007,7 @@ Em que:
 
 \subsection{ANOVA \& MANOVA via teste Wald}
 
-% -----------------------------------------------------------------
+% ----------------------------------------------------------  -------
 
 \begin{frame}[c, allowframebreaks]
 
@@ -1557,9 +1055,9 @@ Em que:
 \begin{enumerate}
  \itemsep 2ex
   
-  \item Testa se os parâmetros referentes a \textbf{renda} são iguais a 0. Ou seja, é avaliado o impacto da retirada de renda do modelo. Neste caso retira-se a interação pois nela há renda.
+  \item Testa se os parâmetros referentes a \textbf{renda} são iguais a 0. Ou seja, é avaliado o impacto da retirada de renda do modelo.
   
-  \item Testa se os parâmetros referentes a \textbf{custo} são iguais a 0. Ou seja, é avaliado o impacto da retirada de custo do modelo. Neste caso retira-se a interação pois nela há custo.
+  \item Testa se os parâmetros referentes a \textbf{custo} são iguais a 0. Ou seja, é avaliado o impacto da retirada de custo do modelo.
   
   \item Testa se o efeito de \textbf{interação} é 0.
 
@@ -1632,44 +1130,17 @@ mc\_manova\_disp()       & MANOVA tipo III para dispersão \\
 \begin{itemize}
 \itemsep 2ex
 
-  \item Propor e implementar procedimentos para realização de testes de comparações múltiplas.
+  \item Propor e implementar procedimentos para realização de testes de \textbf{comparações múltiplas}.
   
-  \item Adequar os testes para que sejam válidos para diferentes contrastes. 
+  \item Adequar os testes para que sejam válidos para diferentes \textbf{contrastes}. 
   
-  \item Avaliar as propriedades e comportamento dos testes propostos com base em estudos de simulação.
+  \item Avaliar as propriedades e comportamento dos testes propostos com base em \textbf{estudos de simulação}.
   
-  \item Motivar o potencial de aplicação das metodologias discutidas com base na aplicação a conjuntos de dados reais.
+  \item Motivar o potencial de aplicação das metodologias discutidas com base na \textbf{aplicação a conjuntos de dados reais}.
   
 \end{itemize}
 
 \end{frame}
-
-%-----------------------------------------------------------------------
-
-\begin{frame}
-  \frametitle{Cronograma}
- 
-\begin{table}[H]
-\centering
-\begin{tabular}{ccc}
-\hline
-\textbf{Tarefa}                                   & \textbf{Data de início} & \textbf{Data de finalização} \\ \hline
-Testes de comparações múltiplas & 17/08                   & 17/09                        \\
-Adaptação para diferentes contrastes  & 17/09                   & 17/10                        \\
-Desenho e execução do estudo de simulação         & 17/10                   & 17/11                        \\
-Análise de dados                                  & 17/11                   & 17/12                        \\
-Sumarização dos resultados                        & 17/12                   & 17/01                        \\
-Entrega e defesa da dissertação                   & 17/01                   & 17/02                        \\ \hline
-\end{tabular}
-\caption{Cronograma para cumprimento das pendências para titulação.}
-\label{tab:crono}
-\end{table}
-
-\end{frame}
-
-% -----------------------------------------------------------------
-
-
 
 % -----------------------------------------------------------------
 
