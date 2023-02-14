@@ -1,9 +1,9 @@
 \babel@toc {brazil}{}
-\beamer@sectionintoc {1}{Modelos multivariados de covari\IeC {\^a}ncia linear generalizada}{3}{0}{1}
-\beamer@sectionintoc {2}{Testes de hip\IeC {\'o}teses em modelos multivariados de covari\IeC {\^a}ncia linear generalizada}{6}{0}{2}
-\beamer@sectionintoc {3}{Adapta\IeC {\c c}\IeC {\~a}o do teste Wald para os McGLM}{10}{0}{3}
-\beamer@sectionintoc {4}{Teste de compara\IeC {\c c}\IeC {\~o}es m\IeC {\'u}ltiplas}{14}{0}{4}
+\beamer@sectionintoc {1}{Modelos multivariados de covariância linear generalizada}{3}{0}{1}
+\beamer@sectionintoc {2}{Testes de hipóteses em modelos multivariados de covariância linear generalizada}{6}{0}{2}
+\beamer@sectionintoc {3}{Adaptação do teste Wald para os McGLM}{10}{0}{3}
+\beamer@sectionintoc {4}{Teste de comparações múltiplas}{14}{0}{4}
 \beamer@subsectionintoc {4}{1}{Exemplo 1}{18}{0}{4}
 \beamer@subsectionintoc {4}{2}{Exemplo 2}{19}{0}{4}
-\beamer@sectionintoc {5}{Implementa\IeC {\c c}\IeC {\~o}es}{21}{0}{5}
+\beamer@sectionintoc {5}{Implementações}{21}{0}{5}
 \beamer@sectionintoc {6}{Toy examples}{23}{0}{6}
